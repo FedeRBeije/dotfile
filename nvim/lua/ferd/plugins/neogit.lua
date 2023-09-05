@@ -1,11 +1,10 @@
-local status, neogit = pcall(require, "neogit")
-if not status then
-	return
-end
-
-neogit.setup({
-	disable_commit_confirmation = true,
-	integrations = {
-		diffview = true,
-	},
-})
+return {
+  "NeogitOrg/neogit",
+  dependencies = {
+    "nvim-lua/plenary.nvim", -- required
+    "nvim-telescope/telescope.nvim", -- optional
+    "sindrets/diffview.nvim", -- optional
+    "ibhagwan/fzf-lua", -- optional
+  },
+  config = true,
+}

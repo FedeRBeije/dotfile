@@ -13,10 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "ferd.plugins" }, { import = "ferd.plugins.lsp" } }, {
   install = {
-    colorscheme = "tokyonight-storm",
+    colorscheme = { "tokyonight" },
   },
   checker = {
-    enable = true,
+    enabled = true,
     notify = false,
   },
   change_detection = {
