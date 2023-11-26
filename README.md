@@ -25,11 +25,11 @@ A friendly documantation on how to have a nice and smooth workflow with github's
 A well-defined branching strategy is crucial for a smooth and organized development process.
 Github offers a flexible branching model that can be adapted to various workflows.
 
-- [✔️] **Main/Branch:**
+- **Main/Branch:**
 
-  - [✔️] Main branch should represent the production-ready code.
-  - [✔️] Feature branches for new features or bug fixes.
-  - [✔️] Release branches for stable versions.
+  - Main branch should represent the production-ready code.
+  - Feature branches for new features or bug fixes.
+  - Release branches for stable versions.
 
 ## Feature Branches
 
