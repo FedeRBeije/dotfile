@@ -6,15 +6,10 @@ Welcome to the GitHub Workflow Guide! This documentation provides an overview of
 
 1. [Introduction](#introduction)
 2. [Branching Strategy](#branching-strategy)
-3. [Collaborating with Others](#collaborating-with-others)
-4. [Pull Requests](#pull-requests)
-5. [Issues](#issues)
-6. [Actions](#actions)
-7. [Projects](#projects)
-8. [Wikis](#wikis)
-9. [Security and Code Scanning](#security-and-code-scanning)
-10. [GitHub Pages](#github-pages)
-11. [Tips and Best Practices](#tips-and-best-practices)
+3. [Pull Requests](#pull-requests)
+4. [Issues](#issues)
+5. [Projects](#projects)
+6. [Tips and Best Practices](#tips-and-best-practices)
 
 ## Introduction
 
@@ -93,8 +88,6 @@ They allow for quick fixes without disrupting the regular development process.
 - **Consistent Naming:**
 
   - Adopt a clear and consistent naming convention for branches to enhance readability.
-
-## Pull Requests
 
 # Pull Requests
 
@@ -223,16 +216,16 @@ Issues and Projects are integral components of an organized and efficient develo
 
 Offer additional tips and best practices for a smooth GitHub workflow.
 
-- [ ] **Commit Messages:**
+- **Commit Messages:**
 
-  - [ ] Write meaningful and concise commit messages.
+  - Write meaningful and concise commit messages.
 
-- [ ] **Use GitHub CLI:**
+- **Use GitHub CLI:**
 
-  - [ ] Introduce the GitHub CLI for command-line interactions.
+  - Introduce the GitHub CLI for command-line interactions.
 
-- [ ] **Notifications:**
-  - [ ] Set up and manage notification preferences.
+- **Notifications:**
+  - Set up and manage notification preferences.
 
 # Conclusion 🚀
 
