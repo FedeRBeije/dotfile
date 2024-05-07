@@ -1,2 +1,2 @@
-require("ferd.core")
-require("ferd.lazy")
+require("fede.core")
+require("fede.lazy")
