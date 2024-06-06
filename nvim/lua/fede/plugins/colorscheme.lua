@@ -13,7 +13,7 @@ return {
     local border = "#547998"
 
     require("tokyonight").setup({
-      style = "night",
+      style = "storm",
       on_colors = function(colors)
         colors.bg = bg
         colors.bg_dark = bg_dark
@@ -30,9 +30,9 @@ return {
         colors.fg_float = fg
         colors.fg_gutter = fg_gutter
         colors.fg_sidebar = fg_dark
-      end
+      end,
     })
 
     vim.cmd("colorscheme tokyonight")
-  end
+  end,
 }
