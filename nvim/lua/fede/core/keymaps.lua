@@ -31,9 +31,9 @@ keymap.set("n", "<leader>ta", "<cmd>tabonly<CR>", { desc = "Close all tabs but c
 -- neogit & diffview
 keymap.set("n", "<leader>ng", ":Neogit<cr>") -- open neogit
 keymap.set("n", "<leader>ngc", ":tabclose<cr>") -- close neogit
-keymap.set("n", "<leader>ngp", ":Neogit push<cr>") -- push to remote
+keymap.set("n", "<leader>ngP", ":Neogit push<cr>") -- push to remote
 keymap.set("n", "<leader>ngl", ":Neogit log<cr>") -- log
-keymap.set("n", "<leader>ngP", ":NeoGit pull<cr>") -- pull from remote
+keymap.set("n", "<leader>ngp", ":NeoGit pull<cr>") -- pull from remote
 keymap.set("n", "<leader>do", ":DiffviewOpen<cr>") -- diff
 keymap.set("n", "<leader>dc", ":DiffviewClose<cr>") -- close diff
 keymap.set("n", "<leader>dh", ":DiffviewFileHistory %<cr>") -- diff file history
