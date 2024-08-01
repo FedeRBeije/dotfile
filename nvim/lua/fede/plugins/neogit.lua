@@ -6,5 +6,11 @@ return {
     "sindrets/diffview.nvim", -- optional
     "ibhagwan/fzf-lua", -- optional
   },
-  config = true,
+  config = function()
+    require("neogit").setup({
+      commit_editor = {
+        kind = "vsplit",
+      },
+    })
+  end,
 }
