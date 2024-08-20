@@ -3,7 +3,14 @@ return {
   lazy = true,
   config = function()
     require("nvim-treesitter.configs").setup({
+
       textobjects = {
+        ensure_installed = { "markdown", "markdown_inline" },
+
+        highlight = {
+          enable = true,
+        },
+
         select = {
           enable = true,
 
