@@ -1,8 +1,8 @@
 # Telegram
-alt - t : open -a /Applications/Telegram.app/Contents/MacOS/Telegram
+ctrl + alt - t : open -a /Applications/Telegram.app/Contents/MacOS/Telegram
 
 # Obsidian
-alt - o : open -a /Applications/Obsidian.app/Contents/MacOS/Obsidian
+ctrl + alt - o : open -a /Applications/Obsidian.app/Contents/MacOS/Obsidian
 
 # QuickTime
-alt - q : open -a /System/Applications/QuickTime\ Player.app/Contents/MacOS/QuickTime\ Player
+ctrl + alt - q : open -a /System/Applications/QuickTime\ Player.app/Contents/MacOS/QuickTime\ Player
