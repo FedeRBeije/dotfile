@@ -4,6 +4,10 @@ local wezterm = require("wezterm")
 -- This will hold the configuration
 local config = wezterm.config_builder()
 
+-- Theme
+config.color_scheme = "Tokyo Night Moon"
+
+-- Font
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 19
 
