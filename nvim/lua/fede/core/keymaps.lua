@@ -38,3 +38,9 @@ keymap.set("n", "<leader>do", ":DiffviewOpen<cr>") -- diff
 keymap.set("n", "<leader>dc", ":DiffviewClose<cr>") -- close diff
 keymap.set("n", "<leader>dh", ":DiffviewFileHistory %<cr>") -- diff file history
 keymap.set("n", "<leader>gs", ":ShowGitStatus<CR>", { silent = true })
+-- obsidian
+keymap.set("n", "<leader>on", ":ObsidianNew<cr>", { desc = "New obsidian note" })
+keymap.set("n", "<leader>os", ":ObsidianSearch<cr>", { desc = "Search obsidian note" })
+keymap.set("n", "<leader>oqs", ":ObsidianQuickSwitch<cr>", { desc = "Quick Switch" })
+keymap.set("n", "<leader>ob", ":ObsidianBacklinks<cr>", { desc = "show location list of backlinks" })
+keymap.set("n", "<leader>ot", ":ObsidianTemplate<cr>", { desc = "follow link under cusor" })
