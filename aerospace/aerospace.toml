@@ -64,8 +64,8 @@ on-focus-changed = "move-mouse window-lazy-center"
 inner.horizontal = 18
 inner.vertical =   18
 outer.left =       18
-outer.bottom =     18
-outer.top =        18
+outer.bottom =     5
+outer.top =        40
 outer.right =      18
 
 # 'main' binding mode declaration
@@ -209,6 +209,11 @@ run = "move-node-to-workspace N"
 [[on-window-detected]]
 if.app-id = 'com.apple.Notes'
 run = "move-node-to-workspace N"
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = "move-node-to-workspace N"
+
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'

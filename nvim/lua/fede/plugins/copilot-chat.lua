@@ -6,6 +6,8 @@ return {
       { "github/copilot.vim" }, -- or github/copilot.vim
       { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
     },
+    build = "make tiktoken", -- Only on MacOS or Linux
+    auto_follow_cursor = false,
     opts = {
       debug = true, -- Enable debugging
       question_header = "## Fede ",
@@ -14,7 +16,15 @@ return {
       window = {
         layout = "float",
         relative = "editor",
-        border = "shadow",
+        border = "rounded",
+      },
+    },
+    prompts = {
+      MonoCommitStaged = {
+        prompt = "Write commit message for the change with commitizen convention for monorepo. Make sure the title has maximum 50 characters and message is wrapped at 72 characters. Wrap the whole message in code block with language gitcommit.",
+        selection = function(source)
+          return require("CopilotChat.select").gitdiff(source, true)
+        end,
       },
     },
     keys = {
@@ -43,6 +53,7 @@ return {
         desc = "CopilotChat - Prompt actions",
       },
 
+      --  Show prompts actions that explain
       { "<leader>cce", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain" },
       { "<leader>ccf", "<cmd>CopilotChatFix<cr>", desc = "CopilotChat - Fix" },
       { "<leader>cco", "<cmd>CopilotChatOptimize<cr>", desc = "CopilotChat - Optimize" },
@@ -57,6 +68,13 @@ return {
         "<leader>ccs",
         "<cmd>CopilotChatCommitStaged<cr>",
         desc = "CopilotChat - Generate commit message for staged changes",
+      },
+
+      -- Generate commit message based on the git diff
+      {
+        "<leader>acm",
+        "<cmd>CopilotChatMonoCommitStaged<cr>",
+        desc = "CopilotChat - Generate commit message for staged changes in monorepo",
       },
 
       {
