@@ -85,6 +85,24 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["rust_analyzer"] = function()
+        lspconfig["rust_analyzer"].setup({
+          capabilities = capabilities,
+          filetypes = { "rs", "toml" },
+          on_attach = function(client, bufnr)
+            -- enable inlay hints
+            client.server_capabilities.inlayHintProvider = { chainingHints = true, typeHints = true }
+            -- enable on save formatting
+            vim.api.nvim_command("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+          end,
+          cmd = {
+            "rustup",
+            "run",
+            "stable",
+            "rust-analyzer",
+          },
+        })
+      end,
       ["svelte"] = function()
         -- configure svelte server
         lspconfig["svelte"].setup({

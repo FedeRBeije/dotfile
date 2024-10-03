@@ -7,10 +7,6 @@ return {
     "ibhagwan/fzf-lua", -- optional
   },
   config = function()
-    require("neogit").setup({
-      commit_editor = {
-        kind = "vsplit",
-      },
-    })
+    require("neogit").setup({})
   end,
 }
