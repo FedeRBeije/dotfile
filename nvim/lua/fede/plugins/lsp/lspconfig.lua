@@ -88,8 +88,8 @@ return {
       ["rust_analyzer"] = function()
         lspconfig["rust_analyzer"].setup({
           capabilities = capabilities,
-          filetypes = { "rs", "toml" },
-          on_attach = function(client, bufnr)
+          filetypes = { "rs" },
+          on_attach = function(client)
             -- enable inlay hints
             client.server_capabilities.inlayHintProvider = { chainingHints = true, typeHints = true }
             -- enable on save formatting

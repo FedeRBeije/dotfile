@@ -1,0 +1,75 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+palette = 'tokyonight'
+
+
+format = '''
+[┌─](bold gray) $directory$git_branch$git_status$fill$nodejs
+[│](bold gray)
+[└](bold gray)$character''' 
+
+
+[directory]
+truncation_symbol = "🐋 "
+truncation_length = 1
+
+[git_branch]
+symbol = "󰘬 "
+format = "[$symbol$branch]($style) "
+
+[git_status]
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+format = '([$all_status$ahead_behind]($style) )'
+conflicted =	'=${count}'	
+untracked =	'?${count}'	
+modified =	'!${count}'
+staged =	'+${count}'
+
+[nodejs]
+format = '[$symbol$version ](bold green) '
+
+[fill]
+symbol = ' '
+
+[palettes.tokyonight]
+# Riga 1 (toni scuri)
+dark_background = "#1f2335"
+background = "#24283b"
+dark_primary = "#292e42"
+light_background = "#3b4261"
+darker_foreground = "#414868"
+
+# Riga 2 (toni intermedi e scuri)
+dark_grey = "#545c7e"
+medium_grey = "#565f89"
+light_grey = "#737aa2"
+muted_blue = "#a9b1d6"
+soft_blue = "#c0caf5"
+
+# Riga 3 (toni blu e verde chiaro)
+navy_blue = "#394b70"
+deep_blue = "#3d59a1"
+sky_blue = "#7aa2f7"
+light_cyan = "#7dcfff"
+aqua = "#b4f9f8"
+
+# Riga 4 (toni viola, lilla, e arancio)
+purple = "#bb9af7"
+lilac = "#9d7cd8"
+orange = "#ff9e64"
+light_orange = "#ffc777"
+green = "#c3e88d"
+
+# Riga 5 (toni verde, blu chiaro, rosso e rosa)
+cyan = "#4fd6be"
+teal = "#41a6b5"
+red = "#ff757f"
+dark_red = "#c53b53"
+pink = "#ff007c"
+

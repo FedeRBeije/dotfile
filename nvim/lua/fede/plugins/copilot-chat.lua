@@ -7,7 +7,6 @@ return {
       { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
     },
     build = "make tiktoken", -- Only on MacOS or Linux
-    auto_follow_cursor = false,
     opts = {
       debug = true, -- Enable debugging
       question_header = "## Fede ",
@@ -18,13 +17,14 @@ return {
         relative = "editor",
         border = "rounded",
       },
-    },
-    prompts = {
-      MonoCommitStaged = {
-        prompt = "Write commit message for the change with commitizen convention for monorepo. Make sure the title has maximum 50 characters and message is wrapped at 72 characters. Wrap the whole message in code block with language gitcommit.",
-        selection = function(source)
-          return require("CopilotChat.select").gitdiff(source, true)
-        end,
+      auto_follow_cursor = false,
+      prompts = {
+        MonoCommitStaged = {
+          prompt = "Write commit message for the change with commitizen convention for monorepo. Make sure the title has maximum 50 characters and message is wrapped at 72 characters. Wrap the whole message in code block with language gitcommit.",
+          selection = function(source)
+            return require("CopilotChat.select").gitdiff(source, true)
+          end,
+        },
       },
     },
     keys = {
@@ -72,7 +72,7 @@ return {
 
       -- Generate commit message based on the git diff
       {
-        "<leader>acm",
+        "<leader>ccm",
         "<cmd>CopilotChatMonoCommitStaged<cr>",
         desc = "CopilotChat - Generate commit message for staged changes in monorepo",
       },
