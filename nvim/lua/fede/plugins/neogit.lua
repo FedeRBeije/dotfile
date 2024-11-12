@@ -7,6 +7,11 @@ return {
     "ibhagwan/fzf-lua", -- optional
   },
   config = function()
-    require("neogit").setup({})
+    require("neogit").setup({
+      commit_view = {
+        kind = "floating",
+        verify_commit = false,
+      },
+    })
   end,
 }

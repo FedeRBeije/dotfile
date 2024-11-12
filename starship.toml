@@ -9,7 +9,6 @@ palette = 'tokyonight'
 
 format = '''
 [┌─](bold gray) $directory$git_branch$git_status$fill$nodejs
-[│](bold gray)
 [└](bold gray)$character''' 
 
 
