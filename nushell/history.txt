@@ -1,2 +1,61 @@
 cd
 clear
+cd nushell
+$env.EDITOR
+vim .zshrc
+config nu
+clear
+cd
+which nu
+nvim config.nu
+$nu.config-path
+$nu.env-path
+clear
+cd
+nvim config.nu
+nvim env.nu
+source env.nu
+source config.nu
+cd
+nvim
+source env.nu
+source config.nu
+cd
+:q
+$nu.env-path
+cd nushell
+cd
+nvim .zshrc
+cd nushell
+cd
+tmux
+tmux ls
+cd
+nvim .zshrc
+cd .config
+nvim
+clear
+nvim
+cd skhd
+source skhdrc
+nvim
+source skhdrc
+brew services restart skhd<\n>
+nvim
+brew services restart skhd<\n>
+nvim
+clear
+cd client
+clear
+cd packages/cli
+clear
+cd config
+clear
+nvim
+clear
+cjkdaf
+mouse
+clear
+cd
+sh <(curl -L https://nixos.org/nix/install)
+cd .zshrc

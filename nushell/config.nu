@@ -901,9 +901,10 @@ def ff [] {
     aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
 }
 
-alias cd = z
 
 use ~/.cache/starship/init.nu
 
-source ~/.config/nushell/.zoxide.nu
+source ~/.zoxide.nu
 source ~/.cache/carapace/init.nu
+
+alias cd = z
