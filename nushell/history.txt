@@ -59,3 +59,31 @@ clear
 cd
 sh <(curl -L https://nixos.org/nix/install)
 cd .zshrc
+clear
+cd .config/nix
+clear
+cd
+nvim .zshrc
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+nvim .config/nix
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+nvim .config/nix
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+tmux
+clear
+cd .config/nix
+nvim
+cd ..
+nvim
+clear
+cd nvim/lua/fede
+nvim
+clear
+nvim
+clera
+clear
+nvim
+clear
+nvim

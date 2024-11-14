@@ -19,6 +19,7 @@
         [
         pkgs.aerospace
         pkgs.discord
+        pkgs.docker
         pkgs.mkalias
         pkgs.neovim
         pkgs.nushell
@@ -33,12 +34,14 @@
       homebrew = {
         enable = true;
         brews = [
+          "carapace"
           "eza"
           "fzf"
           "git"
           "mas"
           "nushell"
           "starship" 
+          "thefuck" 
           "zoxide"
         ];
         casks = [
@@ -50,6 +53,8 @@
         "the-unarchiver"
         ];
         onActivation.cleanup = "zap";
+        onActivation.autoUpdate = true;
+        onActivation.upgrade = true;
       };
 
       fonts.packages = [
@@ -75,6 +80,16 @@
           ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
         done
             '';
+
+      system.defaults = {
+        finder.FXPreferredViewStyle = "clmv";
+        NSGlobalDomain.KeyRepeat = 2;
+      };
+
+      system.keyboard = {
+        remapCapsLockToControl = true;
+        enableKeyMapping= true;
+      };
 
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;

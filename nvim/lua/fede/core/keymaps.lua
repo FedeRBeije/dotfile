@@ -44,3 +44,5 @@ keymap.set("n", "<leader>os", ":ObsidianSearch<cr>", { desc = "Search obsidian n
 keymap.set("n", "<leader>oqs", ":ObsidianQuickSwitch<cr>", { desc = "Quick Switch" })
 keymap.set("n", "<leader>ob", ":ObsidianBacklinks<cr>", { desc = "show location list of backlinks" })
 keymap.set("n", "<leader>ot", ":ObsidianTemplate<cr>", { desc = "follow link under cusor" })
+-- noice
+keymap.set("n", "<leader>nc", "<cmd>NoiceDismiss<CR>", { desc = "Close notification" })
