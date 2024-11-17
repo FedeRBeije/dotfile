@@ -897,8 +897,27 @@ $env.config = {
     ]
 }
 
+# Aerospace
 def ff [] {
     aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+}
+
+# -- Custom Git Commands --
+
+#  Show and delete git branch with fzf
+def gitc [] {
+    let branch = (git branch | fzf| into string | str trim)
+    if $branch != null {
+      git checkout $branch
+    }
+}
+
+# Show and delete git branch with fzf
+def gitd [] {
+        let branch = (git branch | fzf)
+        if $branch != null {
+            git branch -d $branch
+    }
 }
 
 
@@ -906,5 +925,8 @@ use ~/.cache/starship/init.nu
 
 source ~/.zoxide.nu
 source ~/.cache/carapace/init.nu
+
+# Git 
+alias gf = git fetch
 
 alias cd = z

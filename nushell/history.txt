@@ -87,3 +87,297 @@ clear
 nvim
 clear
 nvim
+s
+ls
+cd retail
+ls
+cd packages
+ls
+cd clint
+clear
+nvim
+cd retail
+nvim
+clear
+cd clint
+nvim
+git checkout -b clint/rust
+gitc
+git checkout develop
+git checkout clint/rust
+nvim
+git checkout develop
+cd retail
+nvim
+clear
+nvim
+cd
+cd .config/nushell
+nvim
+cd nvim
+cd clienteling
+npm run dev
+clint project
+npm run dev
+npm run update
+clear
+cd retail
+clear
+:qa
+clear
+nvim
+cd .config
+nvim tmux
+ls
+cd tmux
+ls
+source ~/.config/tmux/tmux.conf
+nvim
+clear
+tmux detach
+tmux attach -t work
+clear
+source ~/.config/tmux/tmux.conf
+clear
+clera
+clear
+cd
+clear
+cd nushell
+clear
+cd nvim/lua/fede
+nvim
+clear
+nvim
+source ~/.config/nushell/config.nu<\n>
+gitd
+nvim
+source ~/.config/nushell/config.nu
+gitd
+gitc
+nvim
+source ~/.config/nushell/config.nu
+clear
+source ~/.config/nushell/config.nu
+clear
+source ~/.config/nushell/config.nu
+gitc
+clear
+git branches
+git --help
+git branch --help
+git branch --list
+cd retail
+git branch --list
+lines
+git branch | lines
+gitc
+git branch | lines | fzf --multi
+git branch | lines | fzf --multi | first
+git branch | lines | fzf --multi | second
+clear
+git branch | lines | fzf --multi 
+git branch | lines
+clear
+git branch
+git branch | lines
+clear
+git branch | lines | fzf
+clear
+git branch
+git branch --list
+clear
+git branch | lines | fzf --multi 
+git branch | fzf
+git branch | lines | fzf
+source ~/.config/nushell/config.nu
+gitc
+git checkout clint/rust
+cd develop
+git checkout develop
+clear
+clera
+clear
+git branch | lines
+git branch
+clear
+git branch | fzf
+git branch | ls
+clear
+gitc
+source ~/.config/nushell/config.nu
+clear
+source ~/.config/nushell/config.nu
+clear
+git branch | fzf | describe
+clear
+git branch | fzf | describe
+git branch | fzf 
+gitc
+git branch | fzf | into string | str trim
+source ~/.config/nushell/config.nu
+gitc
+fs
+source ~/.config/nushell/config.nu
+gitc
+clear
+gf
+clear
+git fetch
+clear
+nvim
+clear
+nvim
+cd client
+cd src/assets
+ls
+cd  images
+ls
+npm run dev
+clear
+git fetch
+clear
+git fetch
+gd
+gf
+gitc
+clear
+npm run dev
+npm run update
+clear
+npm run update
+clear
+nvim
+clear
+cd retail
+gitc
+clear
+gitc
+clear
+nvim
+clear
+clear
+cd retail
+clear
+cd clint
+cd clint
+mkdir src/commands/
+touch src/command/mod.rs
+clear
+cargo install clap
+clear
+nvim
+cargo run -- login --global
+cargo run -- login 
+clear
+cd packages/cli
+cargo run -- logout
+cargo install ini
+cargo add ini
+cargo run -- logout
+clear
+git add .
+git commit -m "rust"
+gitc
+clear
+nvim
+clear
+nvim .zshrc
+clear
+cd fede
+nvim
+nix search ripgrep
+nix-shell search ripgrep
+clear
+nix search nixpkgs ripgrep
+cd nix
+nvim
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+nvim
+nvim
+clear
+clear
+cd .config
+nvim
+nix search nixpkgs sketchybar
+cd nix
+nvim config.nu
+nvim flaker.nix
+nvim
+clerar
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+nvim flaker.nix
+nvim
+cd nix
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+rm -rf ~/Library/Fonts/HackNerdFont-Bold.ttf
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+cd ~/Library/Fonts/
+ls
+rm -rf | first 9
+ls | where # <= 10
+ls
+ls | get 2
+ls | $in
+ls | $#
+ls | where name =~ Hack
+ls | where name =~ Hack | each { rm $in.name } | null
+ls
+ls | where name =~ Hack | each { rm -rf $in.name } | null
+ls
+ls | where name =~ Hack and type == file | each { rm -rf $in.name } | null
+ls
+ls | where name =~ Hack and type == file | each { rm $in.name } | null
+ls
+ls | where name == HackNerdFont-BoldItalic.ttf and type == file | each { rm $in.name } | null
+ls
+finder
+find
+clear
+ls | where name == HackNerdFont-BoldItalic.ttf and type == file | each { rm $in.name } | null
+ls
+rm -rf HackNerdFont-BoldItalic.ttf
+ls
+rm -rf HackNerdFont-Italic.ttf
+rm -rf HackNerdFont-Regular.ttf
+ls
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+ls
+rm -rf HackNerdFontMono-Regular.ttf
+rm -rf HackNerdFontMono-Bold.ttf
+rm -rf HackNerdFontMono-BoldItalic.ttf
+rm -rf HackNerdFontMono-Italic.ttf
+ls
+rm -rf HackNerdFontPropo-Italic.ttf
+rm -rf HackNerdFontPropo-Bold.ttf
+rm -rf HackNerdFontPropo-BoldItalic.ttf
+rm -rf HackNerdFontPropo-Regular.ttf
+ls
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+cd
+cd nu
+nvim
+clear
+cd
+nvim .zshrc
+source ~/.zshrc
+clear
+sketchybar
+clear
+brew services start sketchybar
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear

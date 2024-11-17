@@ -29,7 +29,13 @@
         pkgs.spotify
         pkgs.tmux
         pkgs.wezterm
+        pkgs.ripgrep
+        pkgs.sketchybar
         ];
+
+# Services that are enabled by default and works on the background.
+      services.skhd.enable = true;
+      services.sketchybar.enable = true;
 
       homebrew = {
         enable = true;
@@ -45,12 +51,11 @@
           "zoxide"
         ];
         casks = [
-        # "aerospace"
         "firefox"
         "hammerspoon"
         "wezterm"
-        # "iina"
         "the-unarchiver"
+        "font-hack-nerd-font"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
