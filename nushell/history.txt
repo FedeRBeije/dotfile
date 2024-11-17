@@ -381,3 +381,9 @@ darwin-rebuild switch --flake ~/.config/nix#mini<\n>
 clear
 darwin-rebuild switch --flake ~/.config/nix#mini<\n>
 clear
+nvim flake.nix
+cd nvim
+nvim
+clear
+nvim
+clear
