@@ -387,3 +387,6 @@ nvim
 clear
 nvim
 clear
+cd .config
+nvim
+clear
