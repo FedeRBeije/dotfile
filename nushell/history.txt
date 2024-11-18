@@ -390,3 +390,218 @@ clear
 cd .config
 nvim
 clear
+nvim
+clear
+cd client
+clear
+cd client
+cd retail
+clear
+git checkout -b mc/feature/expo
+clear
+clear
+npm i -g eas-cli
+npx expo-doctor@latest
+npx expo install --check
+npx expo install expo@^52.0.0 --fix
+clear
+nvim
+git push
+fuck
+thefuck
+git push -u origin mc/feature/expo
+npm run dev
+clear
+npm run dev
+clear
+git checkout -b MC/feature/expo
+git checkout -b MC/feature/expo_52
+gitc
+git branch -d MC/feature/expo_52
+clear
+git checkout -b MC/feature/expo_52
+nvim
+clear
+nvim
+gitc
+clear
+clear
+cd packages/cli
+cd packages/cli
+clear
+npm install csv-parser --workspace=packages/cli
+clear
+nvim
+clear
+npm run buiold
+npm run build
+clear
+npm run build
+clint make-issues --path=~/Desktop/to-do-rp-csv
+clint project
+nvim
+clear
+npm run build
+clint make-issues --path=~/Desktop/to-do-rp-csv
+clint -h
+clint help make-issues
+clint make-issues -p ~/Desktop/to-do-rp-csv
+clint make-issues --path ~/Desktop/to-do-rp-csv
+npm run build
+clint make-issues --path ~/Desktop/to-do-rp-csv
+clint make-issues --path ~/Desktop/todo.csv
+clear
+curl -H "Authorization: Bearer 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" \<\n>     https://api.github.com/repos/organization_name/repository_name/issues<\n>
+curl -H "Authorization: Bearer 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" \<\n>     https://api.github.com/repos/EngineeringRetailPlatform/retail-platform-mono/issues<\n>
+curl -H "Authorization: Bearer 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" \<\n>     https://api.github.com/EngineeringRetailPlatform/retail-platform-mono/issues<\n>
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+clear
+clint make-issues --path ~/Desktop/todo.csv
+clint make-issues --path ~/Desktop/todos.csv
+cd
+cd ~/Desktop
+ls
+ls | where name =~ todo
+cd packages/cli
+clint make-issues --path ~/Desktop/todo.csv
+npm run build
+npm run dev
+clint make-issues --path ~/Desktop/todo.csv
+npm run bl
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+gh 
+nix search nixpkgs gh
+cd nix
+nvim flake.nix
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+gh -v
+clear
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+gh auth status
+gh issue list --repo <owner>/<repo-name><\n>
+gh issue list --repo EngineeringRetailPlatform/retail-platform-mono
+gh issue create --title "Test Issue" --body "This is a test issue body" --repo "EngineeringRetailPlatform/retail-platform-mono"<\n>
+cd
+cd retail
+open ~/Desktop/todo.csv
+cd ~/Desktop/todo.csv
+cd
+cd ~/Desktop/todo.csv
+cd Desktop
+open todo.csv | to json > todo.json<\n>
+clear
+clint make-issues --path ~/Desktop/todo.csv
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+clear
+cd retail
+cd ..
+ls
+git clone git@github.com:EngineeringRetailPlatform/ebsn-front-services.git
+rm -rf ebsh-front-services
+git clone git@github.com:EngineeringRetailPlatform/ebsn-front-services.git
+rm -rf ebsh-front-services
+ls
+rm -rf ebsn-front-services
+ls
+rm -rf ebsh-front-services
+git clone git@github.com:EngineeringRetailPlatform/ebsn-front-services.git
+cd ebsn-front-services
+cd ebsn-front
+clear
+npm i
+npm run test
+clear
+npx jest ./src/backofficeService/backofficeService.spec.ts
+cd ebsn-front
+ls
+cd src
+ls
+npx jest ./src/services/backofficeService/backofficeService.spec.ts
+clear
+npx jest ./src/services/backofficeService/backofficeService.spec.ts
+nvim
+npx jest ./src/services/backofficeService/backofficeService.spec.ts
+open todo.csv
+open todo.csv | from csv --separator ';'
+open todo.csv 
+clear
+npm run build
+clint make-issues --path ~/Desktop/todo.csv
+clear
+cd tmux
+nvim
+clear
+nvim
+clear
+clear
+npx jest ./src/services/backofficeService/backofficeService.spec.ts
+npx jest ./src/services/backofficeService/backofficeService.spec.ts
+clint make-issues --path ~/Desktop/todo.csv
+clear
+clint make-issues --path ~/Desktop/todo.csv
+open todo.csv 
+clear
+open todo.csv 
+clear
+nvim
+gitc
+clear
+cd presenter
+npx expo install expo@^52.0.0 --fix
+npx expo doctor
+npx expo-doctor
+npx expo install --check
+cd client
+npx expo-doctor
+npx expo install --check
+clear
+turbo clean
+cd retail
+turbo clean
+npx @turbo/codemod@latest update
+clear
+npx expo-doctor
+npx expo-doctor
+npm i
+clear
+nvim
+nvim
+npm i
+nvim
+npx expo-doctor
+npx expo-doctor
+nvim
+clear
+npx expo install --check
+clear
+clear
+nvim
+clear
+cd packages/cli
+nvim
+clear
+cd rust
+ls
+cd example
+clear
+cargo run
+c
+cargo run
+cargo run 
+cargo run ciao
+cargo run
+cargo run write
+cd .config
+nvim
+cd fede
+nvim

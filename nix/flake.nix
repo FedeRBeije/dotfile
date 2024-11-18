@@ -20,17 +20,18 @@
         pkgs.aerospace
         pkgs.discord
         pkgs.docker
+        pkgs.gh
         pkgs.mkalias
         pkgs.neovim
         pkgs.nushell
         pkgs.obsidian
         pkgs.postman
+        pkgs.ripgrep
+        pkgs.sketchybar
         pkgs.skhd
         pkgs.spotify
         pkgs.tmux
         pkgs.wezterm
-        pkgs.ripgrep
-        pkgs.sketchybar
         ];
 
 # Services that are enabled by default and works on the background.

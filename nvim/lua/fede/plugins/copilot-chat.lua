@@ -21,22 +21,14 @@ return {
       prompts = {
         MonoCommitStaged = {
           prompt = "Write commit message for the change with commitizen convention for monorepo. Make sure the title has maximum 50 characters and message is wrapped at 72 characters. Wrap the whole message in code block with language gitcommit.",
-          selection = function(source)
-            return require("CopilotChat.select").gitdiff(source, true)
-          end,
+          context = "git",
+          -- selection = function(source)
+          --   return require("CopilotChat.select").gitdiff(source, true)
+          -- end,
         },
       },
     },
     keys = {
-      -- Show help actions with telescope
-      {
-        "<leader>ah",
-        function()
-          local actions = require("CopilotChat.actions")
-          require("CopilotChat.integrations.telescope").pick(actions.help_actions())
-        end,
-        desc = "CopilotChat - Help actions",
-      },
       -- Show prompts actions with telescope
       {
         "<leader>ap",
@@ -64,12 +56,6 @@ return {
         "<cmd>CopilotChatCommit<cr>",
         desc = "CopilotChat - Generate commit message for all changes",
       },
-      {
-        "<leader>ccs",
-        "<cmd>CopilotChatCommitStaged<cr>",
-        desc = "CopilotChat - Generate commit message for staged changes",
-      },
-
       -- Generate commit message based on the git diff
       {
         "<leader>ccm",
