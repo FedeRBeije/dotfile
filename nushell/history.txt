@@ -605,3 +605,103 @@ cd .config
 nvim
 cd fede
 nvim
+clear
+nvim
+clear
+cd desktop
+clear
+open todo.csv
+open todo.numbers
+open todo.csv
+open --raw todo.csv
+open --raw todo.csv | from csv
+open --raw todo.csv 
+<\n>   · ──┬─<\n>   ·   ╰── CSV error: rec
+clear
+open --raw todo.csv 
+open --raw todo.csv | from csv --separator ';'
+gh copilot explain "how can i use nushell to run for each row from a csv readed with nushell to create an issue where 3 columns should be use for the message of the issue and writed in md"
+gh copilot explain "how can i use nushell to run for each row from a csv readed with nushell to create an issue where 3 columns should be use for the message of the issue and writed in md. the command should be this: gh issue create --title "Test Issue" --body "This is a test issue body" --repo "EngineeringRetailPlatform/retail-platform-mono""
+gh copilot explain "how can i use nushell to run for each row from a csv readed with nushell to create an issue where 3 columns should be use for the message of the issue and writed in md. the command should be this: gh issue create --title "Test Issue" --body "This is a test issue body" --repo "EngineeringRetailPlatform/retail-platform-mono" the body it should be a md like follow ### Epic \n $it.epic \n ### As \n User \n ### I want to \n $it.IwantTo \n ### So that \n $in.SoThat "
+open --raw todo.csv | from csv --separator ';' | each { println!($it)}
+open --raw todo.csv | from csv --separator ';' | each { |row| println!($row)}
+open --raw todo.csv | from csv --separator ';' | each { |row| }
+gh copilot explain "how can i use nushell to run for each row from a csv readed with nushell to create an issue where 3 columns should be use for the message of the issue and writed in md. the command should be this: gh issue create --title "Test Issue" --body "This is a test issue body" --repo "EngineeringRetailPlatform/retail-platform-mono" the body it should be a md like follow ### Epic \n $it.epic \n ### As \n User \n ### I want to \n $it.IwantTo \n ### So that \n $in.SoThat "
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"### Epic \n ($row.Epic) \n ### As \n User \n ### I want to \n ($row.IwantTo) \n ### So that \n ($row.SoThat)" --repo "EngineeringRetailPlatform/retail-platform-mono"}
+gh project view <project_id> --json columns --repo EngineeringRetailPlatform/retail-platform-mono
+gh project view Product Board --json columns --repo EngineeringRetailPlatform/retail-platform-mono
+gh project view 
+gh auth refresh -s read:project
+gh project view 
+gh project -h
+gh project list --owner EngineeringRetailPlatform
+gh project view PVT_kwDOCoNLR84AsTvm --json columns --repo EngineeringRetailPlatform/retail-platform-mono
+gh project view PVT_kwDOCoNLR84AsTvm 
+gh project view PVT_kwDOCoNLR84AsTvm --json columns --owner EngineeringRetailPlatform
+gh project view PVT_kwDOCoNLR84AsTvm  --owner EngineeringRetailPlatform
+gh project view 1  --owner EngineeringRetailPlatform
+gh project view 5  --owner EngineeringRetailPlatform
+gh issue status
+gh issue status --owner EngineeringRetailPlatform
+cd retail
+gh issue status
+gh issue status --json projectCard
+gh issue status --json projectCards
+gh issue status --json projectItems
+gh issue list --json number,title --jq '.[] | {number, title}'<\n>
+gh project cards list --project-id <a93fb6e7> --json content_url<\n>
+gh project field-list
+clear
+nvim
+cd nix
+nvim
+cd nushell
+nvim
+clear
+clear
+nvim
+vim
+source ~/.config/nushell/config.nu
+q
+source ~/.config/nushell/env.nu
+q
+clear
+source ~/.config/nushell/config.nu
+clear
+vim 
+gh issue
+which nu
+clear
+c;ear
+clear
+cd client
+nvim
+clear
+nvim
+npx jest ./src/services/backofficeService/backofficeService.spec.ts
+npm i
+nvim
+clear
+gitc
+npm run dev
+clear
+npm run dev
+clear
+clear
+cd retail
+cd desktop
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | null) \n # So that \n ($row.SoThat | null)" --label $"user story, Epic ($row.Epic)" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono"} | null<\n>
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | null) \n # So that \n ($row.SoThat | null)" --label $"user story, Epic ($row.Epic)" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono"}
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | null) \n # So that \n ($row.SoThat | null)" --label $"user story, Epic ($row.Epic)" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-monoa" }
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | null) \n # So that \n ($row.SoThat | null)" --label $"user story, Epic ($row.Epic)" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')" --label $"user story, Epic ($row.Epic)" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+open --raw todo.csv | from csv --separator ';' | each { |row| }
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')"--label $"Epic ($row.Epic)" --label "user story" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')"--label $"'Epic ($row.Epic)'" --label "user story" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')" --label $"Epic ($row.Epic)" --label "user story" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+clear
+open --raw todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')" --label $"Epic ($row.Epic)" --label "user story" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+cd retail
+open --raw ~/Desktop/todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')" --label $"Epic ($row.Epic)" --label "user story" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+open --raw ~/Desktop/todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')" --label $"Epic ($row.Epic)" --label "user story" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+clear

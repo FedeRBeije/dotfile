@@ -26,6 +26,7 @@ return {
         "javascript",
         "typescript",
         "tsx",
+        "nu",
         "yaml",
         "html",
         "css",
