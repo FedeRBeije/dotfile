@@ -64,7 +64,7 @@
       };
 
       fonts.packages = [
-        (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })  
+        (pkgs.nerdfonts.override { fonts = [ "Meslo"  ]; })  
       ];
 
       system.activationScripts.applications.text = let

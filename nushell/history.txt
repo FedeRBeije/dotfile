@@ -705,3 +705,33 @@ cd retail
 open --raw ~/Desktop/todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')" --label $"Epic ($row.Epic)" --label "user story" --project "Product Board" --repo "EngineeringRetailPlatform/retail-platform-mono" }
 open --raw ~/Desktop/todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic | null) \n # As \n User \n # I want to \n ($row.IwantTo | 'insert') \n # So that \n ($row.SoThat |'insert')" --label $"Epic ($row.Epic)" --label "user story" --repo "EngineeringRetailPlatform/retail-platform-mono" }
 clear
+cd retail
+clear
+nvim
+clear
+git fetch
+gf
+clear
+nvim
+git fetch
+git checkout MyClientelingMock
+clear
+npm run dev
+clear
+open --raw ~/Desktop/todo.csv | from csv --separator ';' | each { |row| gh issue create --title $row.Title --body $"# Epic \n ($row.Epic) \n # As \n User \n # I want to \n ($row.IwantTo) \n # So that \n ($row.SoThat)" --label $"Epic ($row.Epic)" --label "user story" --repo "EngineeringRetailPlatform/retail-platform-mono" }
+clear
+nvim
+clear
+cd nix
+nvim
+dal
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+cd nushell
+nvim
+source ~/.config/nushell/config.nu
+nvim
+vim
+v
+vim
+clear

@@ -933,4 +933,5 @@ alias gf = git fetch
 alias cd = z
 
 # Neovim
+alias v = vim
 alias vim = nvim
