@@ -735,3 +735,174 @@ vim
 v
 vim
 clear
+nvim
+clear
+cd cognito
+cd packages/cognito
+nvim
+clear
+nvim
+cd ..
+nvim
+cd cognito
+npm publish
+nvim
+npm publish
+cd services
+nvim
+cd retail
+cd packages/services
+nvim
+clear
+cd cognito
+npm publish
+cd queue
+cd ..
+ls
+rm -rf monclient-app-queue-services
+git clone git@github.com:EngineeringRetailPlatform-Moncler/monclient-app-mulesoft-queue-manager.git
+git checkout develop
+cd queue
+cd monclient-app-mulesoft-queue-manager
+git checkout develop
+clear
+git fetch
+npm i
+npm run dev
+nvim
+npm run dev
+npm i
+npm run dev
+nvim
+npm install --save @babel/runtime
+clear
+npm run dev
+clear
+npm install --save @babel/runtime
+npm run dev
+nvim
+clear
+nvim
+cd nix
+nvim
+nvi
+vim
+npm i
+npm run dev
+clear
+nvim
+vim
+npm i
+npm run dev
+clear
+nvim
+cd retail
+clear
+nvim
+cd lua
+cd nvim
+nvim
+clear
+nvim
+clear
+nvim
+nvim
+npm run dev
+clear
+nvim
+gg
+gf
+git pull
+clear
+nvim
+cd .config
+nvim
+git fetch
+git pull
+nvim
+vi
+vim
+npm run dev
+clear
+nvim
+clear
+nvim
+cd client
+npx lint-staged
+cd retail
+gf
+git pull
+nvim
+git pull
+nvim
+gf
+git pull
+clear
+git whoami
+git config list
+clear
+cd retail
+clear
+nvim
+gf
+git pull
+gitc
+clear
+npm i
+clear
+nvim
+npm run dev
+clear
+cd retail
+clear
+turbo clean
+npx @turbo/codemod@latest update
+nvim
+npx @turbo/codemod@latest update
+clear
+nvim
+vnim
+nvim
+clear
+nvim
+npm run build
+npm i
+npx expo-doctor
+npx expo install --check
+npm run build
+cd packages/cli
+npm run build
+clear
+npx lint-staged
+gh copilot explain "<\n>/Users/federicoreghini/Documents/beije/engineering/retail-platform-mono/apps/native/my-clienteling/src/constants/Colors.ts<\n>  1:1  error  Definition for rule '@typescript-eslint/no-empty-object-type' was not found     @typescript-eslint/no-empty-object-type<\n>  1:1  error  Definition for rule '@typescript-eslint/no-wrapper-object-types' was not found  @typescript-eslint/no-wrapper-object-types<\n>"
+nvim
+clear
+clera
+clear
+gitc
+nvim
+npm run dev
+npm i
+clear
+clear
+npm rund ev
+vim
+nvim
+clear
+nvim
+cd ebsn-front
+cd example
+cd ebsn-front
+clear
+git fetch
+git pull
+git pull master
+git pull origin master
+nvim
+gitc
+clear
+gitc
+gitd
+nvim
+cd nushell
+nvim

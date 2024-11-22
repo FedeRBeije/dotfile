@@ -914,7 +914,7 @@ def gitc [] {
 
 # Show and delete git branch with fzf
 def gitd [] {
-        let branch = (git branch | fzf)
+    let branch = (git branch | fzf| into string | str trim)
         if $branch != null {
             git branch -d $branch
     }
