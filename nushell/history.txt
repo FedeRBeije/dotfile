@@ -906,3 +906,724 @@ gitd
 nvim
 cd nushell
 nvim
+clear
+clerar
+clear
+clear
+git pull
+clear
+source ~/.config/nushell/config.nu
+gitd
+git checkout MyClientelingMock
+clear
+npm run build
+npm publish
+nvim
+cd nvim
+npm run dev
+nvim
+npm i
+cd lib
+cd ..
+npm run build
+cd lib
+npm publish
+clear
+clear
+ear
+clear
+cd ..
+clear
+nvim
+npm run build
+cd lib
+npm publish
+clear
+cd ..
+npm i
+gf
+clear
+gh copilot explain "how to map all keypmas of tmux"
+nvim
+cd tmux
+nvim
+tmux attach
+tmux kill-session -t work
+tmux ls
+cd client
+cd retail
+clear
+tmux attach -t work
+gh copilot explain "create new session with name"
+gh copilot explain "create new session within tmux with name"
+clear
+cd client
+clear
+cd client
+clear
+tmux new-session -s work
+tmux kill-session -t work
+source ~/.config/tmux/tmux.conf
+gh copilot explain "how to re source tmux config within tmux"
+:source-file ~/.config/tmux/tmux.conf
+:source ~/.config/tmux/tmux.conf
+source ~/.config/tmux/tmux.conf
+clear
+gh copilot explain "how to change index of a window in tmux"
+clear
+cd clien
+clear
+clear
+nvim
+gf
+nvim
+clear
+cd nvim
+npm run dev
+nvim
+clear
+clear
+gf
+clear
+gid
+gitd
+clear
+npm run dev
+clear
+clera
+clear
+vim ebsn
+cd ebsn-front
+vim
+cd ebsn-front
+clear
+gf
+clear
+npm run test:assisted-sales
+npm i
+nvim
+clear
+git fetch
+clear
+nvim
+clear
+git pull origin MC/feature/newcontact
+npm run test:assisted-sales
+clera
+clear
+npm run dev
+clear
+nvim
+gf
+npm run dev
+clear
+vim
+cd .config
+nvim
+nvim
+clear
+nvim
+vim
+nvim
+nvim
+cd
+vim .zshrc
+clear
+nvim .config
+clear
+nvim
+cd .config
+nvim
+source ~/.config/tmux/tmux.conf
+tmux attach -t work
+tmux detach
+source ~/.config/tmux/tmux.conf
+tmux source-file ~/.config/tmux/tmux.conf<\n>
+clear
+nvim
+clear
+cd client
+clear
+nvim
+nvim
+cd
+clear
+ls
+la
+clear
+ls -l
+nvim .tmux.conf
+clear
+ls
+clear
+tmux detach
+tmux attach -t work
+tmux ls
+tmux source-file ~/.config/tmux/tmux.conf
+cd .config
+nvim
+tmux list-keys | grep C-q<\n>
+nvim
+tmux source-file ~/.config/tmux/tmux.conf
+nvim
+tmux source-file ~/.config/tmux/tmux.conf
+tmux list-keys | grep C-q<\n>
+find ~ /etc -name "tmux.conf"<\n>
+clear
+tmux attach -t work
+tmux detach
+tmux list-keys | grep C-q<\n>
+tmux list-keys | grep C-q
+tmux source-file ~/.config/tmux/tmux.conf
+tmux list-keys | grep C-q
+tmux list-keys | grep C-s
+nvim
+cd .config
+nvim
+tmux source-file ~/.config/tmux/tmux.conf
+nvim
+tmux list-keys | grep C-o
+tmux list-keys | grep C-t
+nvim
+tmux source-file ~/.config/tmux/tmux.conf
+tmux list-keys | grep C-t
+tmux list-keys | grep C-q
+tmux list-keys | grep C-
+nvim
+clear
+nvim
+tmux source-file ~/.config/tmux/tmux.conf
+tmux list-keys | grep C-q
+tmux list-keys | grep C-s
+clear
+nvim
+nvim
+cd packages/utils
+npm init -y
+npx tsc --init<\n>
+cd packages/utils
+clear
+mkdir src
+touch src/validation/email.ts
+mkdir src/validation
+touch src/validation/email.ts
+clear
+cd reatil
+npm install --save-dev jest ts-jest @types/jest --workspace=packages/utils<\n>
+npm install --save-dev jest ts-jest @types/jest --workspace=utils
+nvim
+cd ..
+nvim
+cd retial
+cd retail
+turbo gen workspace --type package --name utils
+cd packages/utils
+nvim
+cd ..
+cd ..
+clear
+cd utils
+cd retail
+npm install --save-dev jest ts-jest @types/jest --workspace=utils
+npm install --save-dev typescript --workspace=utils
+cd packages/utils
+npm run build && npm run test
+npm run build and npm run test
+npm run build
+npm run test
+npm run build
+npm run test
+npm run build
+npm run test
+npm run build
+npm run test
+npm run build
+npm run test
+npm run build
+npm run test
+clear
+npm run test
+clear
+npm run build
+npm run test
+npm run build
+npm run test
+npm run build
+clear
+npm run build
+clear
+npm run build
+clear
+npm run build
+node cjs-test.js
+node esm-test.mjs
+npm run build
+node cjs-test.js
+node esm-test.mjs
+npm run build
+node esm-test.js
+npm run build
+cd retail
+npm i
+cd client
+npm run dev
+cd retail
+npm i
+c;ear
+clear
+cd ..
+npx create vite utils --template vanilla-ts
+npm create vite utils --template vanilla-ts
+npm run build
+cd utils
+npm run build
+clear
+turbo gen workspace --type package --name @clienteling/utils --copy packages/services
+clear
+q
+:q
+cd packages
+clear
+turbo gen workspace --type package --name @clienteling/utils --copy @eng-retail-platform/front-services
+cd retail
+npm i
+npm run dev
+cd packages/utils
+npm run build
+npm run test
+npm run build
+clear
+npm run build
+clear
+npm run test
+npx ts-jest config:init
+npm run test
+clear
+npm i
+npm run dev
+cd client
+nvim
+npm run build
+clear
+npm run build
+clear
+npm run dev
+npm i
+cd retail
+npm i
+clear
+npm run build
+turbo gen workspace --type package --name @clienteling/utils --copy @clienteling/twilio
+cd packages
+turbo gen workspace --type package --name @clienteling/utils --copy @clienteling/twilio
+cd retail
+npm i
+cd utils
+nvim
+npm run test
+nvim
+npm run build
+clear
+npm run build
+clear
+cd retail
+nvim
+tubo clean
+turbo clean
+nvim
+npm i
+cd packages/utils
+npm run build
+npm run test
+clear
+npm run test
+npm run build
+npm run test
+npm run build
+npm run test
+npm run build
+npm run test
+npm run build
+cleawr
+clear
+npm run build
+clear
+npm run build
+clear
+npm i
+clear
+turbo dev --filter=my-clienteling
+npx @turbo/codemod@latest update
+turbo dev --filter=my-clienteling
+nvim
+turbo dev --filter=my-clienteling
+clear
+nvim
+nvim
+clear
+cd client
+npm run dev
+turbo dev --filter=my-clienteling
+npm i --save-del @babel/highlight --workspace=my-clienteling
+turbo dev --filter=my-clienteling
+clear
+nvim
+clear
+gf
+turbo clean
+npx @turbo/codemod@latest update
+nvim
+clear
+npm i
+cd client
+npm run dev
+clear
+cd retail
+nvim
+npm i --save-dev  typescript@latest
+clear
+nvim
+clear
+turbo dev --filter=my-clienteling
+nvim
+turbo dev --filter=my-clienteling
+clear
+nvim
+clear
+cd retail
+clear
+turbo gen workspace --type package --name @clienteling/utils 
+clear
+cd packages/utils
+clear
+npm init jest@latest
+cd retail
+npm i --save-dev  jest@latest
+npm i --save-dev  jest@latest --workspace=@clienteling/utils
+nvim
+npm i --save-dev  jest@latest --workspace=utils
+npm i --save-dev --workspace=@clienteling/utils jest@latest
+cd packages/utils
+npm run teset
+npm run test
+npm install --save-dev --workspace=@clienteling/utils  ts-jest
+npm install --save-dev --workspace=@clienteling/utils  @types/jest
+npm run test
+npm run build
+npm run test
+npm i
+clear
+npm i
+npm run test
+clear
+npm i
+npm run test
+npm run build
+npm i
+cd client
+npm run dev
+cd retail
+npm i
+clear
+gf
+cd retail
+cd reatil
+cd retail
+gf
+nvim
+clear
+clear
+clear
+nvim
+cler
+clear
+cd client
+clear
+git checkout -b feature/247-refactor
+clera
+clear
+nvi
+nvim
+clear
+npm run dev
+clear
+gf
+git fetch
+vim
+clear
+git push
+clear
+gitc
+gf
+git pull
+gitd
+clear
+nvim
+clear
+cd packages
+nvim
+clear
+cd reatil
+cd retail
+nvim
+vim
+cd retail
+cd client
+nvim
+clear
+clea
+clear
+clear
+cd packages
+npm run build
+cd packages
+cd utila
+cd utils
+npm run build
+cd reatil
+cd retail
+npm i
+clear
+npm run build
+cd utils
+npm run build
+cd twilio
+cd ../twilio
+clear
+npm run build
+cd retail
+npm i
+cd utils
+npm i
+npm run build
+cd reatil
+cd retail
+npm i
+nvim
+cd my-presenter
+cd utils
+npm run build
+clear
+npm run build
+clera
+clear
+npm run build
+npm run tst
+npm run test
+cd retail
+npm i
+nvim
+cd client
+nvim
+gf
+clear
+cd retail
+clear
+cd apps
+ls
+cd web
+ls
+npx create vite pkgs-test
+npm create vite pkgs-test
+cd pkgs-test
+npm i
+cd pkgs-test
+npm run dev
+gf
+clear
+nvim
+clear
+cd retail
+turbo dev --filter=pkgs-test
+clear
+nvim
+npm i
+cd utils
+nvim
+npm run build
+cd retail
+nvim
+cd pkgs-test
+cd utils
+npm run build
+cd utils
+nvim
+npm run build
+nvim
+npm run build
+nvim
+npm run build
+nvim
+npm run build
+clear
+cd utils
+npm run build
+npm run dev
+cd retail
+gf
+clear
+clear
+nvim
+cd retail
+clera
+clear
+nvim
+npm run dev
+npm i
+gd
+gf
+clear
+git pull
+clear
+npm run build
+clear
+cd lib
+clear
+cd ..
+npm run build
+cd lib
+npm publish
+clear
+npm run dev 
+claer
+clear
+npm i
+npm run dev 
+clera
+clear
+nvim
+cd nushell
+nvim
+npm run dev 
+ls -a
+ls -l
+la
+clear
+cd client
+gf
+clear
+git pull
+clear
+nvim
+git clone https://github.com/EngineeringRetailPlatform/retail-platform-mono.wiki.git
+https://github.com/EngineeringRetailPlatform/retail-platform-mono.wiki.git
+git clone github.com:EngineeringRetailPlatform/retail-platform-mono.wiki.git
+clear
+nvim
+cd ..
+git clone github.com:EngineeringRetailPlatform/retail-platform-mono.wiki.git wiki
+nvim
+cd wiki
+nvim
+clear
+cd wiki
+clear
+clera
+clear
+cd retail
+clear
+cd utils
+npm run dev 
+gf
+clear
+nvim
+npx lint-staged
+tmux attach -t work
+clear
+clear
+clear
+nvim
+nvime
+nix search nixpkgs mozilla
+vim nix
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+vim nix
+cd aerospace
+osascript -e 'id of app "Firefox"'
+nvim
+osascript -e 'id of app "Postman"'
+npm run build
+cd lib
+npm publish
+clear
+npm i
+cd ..
+npm run build
+cd lib
+npm publish
+cd packages/utils
+npm run build
+cd utils
+npm run test
+npm run build
+cd queue
+clear
+cd queue
+clear
+npm run test
+clear
+npm run test
+nvim
+clear
+cd services
+nvim
+cd packages/services
+clear
+nvim
+npm run dev
+clear
+gf
+clear
+npm run dev
+npm run test
+clear
+gf
+git pull
+nvim
+clear
+gitc
+git checkout pipeline/develop
+git merge develop
+git push
+git checkout pipeline/test
+git merge test
+git merge develop
+git push
+git checkout pipeline/production
+git merge develop
+git push
+clear
+gitc
+clear
+cd queue
+nvim
+npm run dev
+clera
+clear
+nvim
+clear
+cd retail
+cd pkgs-test
+npm run preview
+clear
+cd ..
+nvim
+clear
+cd ..
+cd retail
+clear
+cd retail
+clear
+npm run dev
+clear
+gf
+git pull
+nvim
+clear
+aerospace lsit-apps
+aerospace list-apps
+tmux attach -t work
+clear
+cd aerospace
+aerospace list-apps
+nvim

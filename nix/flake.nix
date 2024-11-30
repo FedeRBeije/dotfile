@@ -54,7 +54,6 @@
         casks = [
         "firefox"
         "hammerspoon"
-        "wezterm"
         "the-unarchiver"
         "font-hack-nerd-font"
         ];

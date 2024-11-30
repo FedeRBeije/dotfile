@@ -8,8 +8,12 @@ return {
   },
   config = function()
     require("neogit").setup({
+      kind = "tab",
+      commit_editor = {
+        kind = "vsplit",
+      },
       commit_view = {
-        kind = "floating",
+        kind = "vsplit",
         verify_commit = false,
       },
     })
