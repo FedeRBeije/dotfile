@@ -18,6 +18,7 @@
       environment.systemPackages =
         [
         pkgs.aerospace
+        pkgs.carapace
         pkgs.discord
         pkgs.docker
         pkgs.gh
@@ -27,11 +28,11 @@
         pkgs.obsidian
         pkgs.postman
         pkgs.ripgrep
+        pkgs.syncthing
         pkgs.sketchybar
         pkgs.skhd
         pkgs.spotify
         pkgs.tmux
-        pkgs.wezterm
         ];
 
 # Services that are enabled by default and works on the background.
@@ -41,7 +42,6 @@
       homebrew = {
         enable = true;
         brews = [
-          "carapace"
           "eza"
           "fzf"
           "git"
@@ -53,9 +53,9 @@
         ];
         casks = [
         "firefox"
-        "hammerspoon"
         "the-unarchiver"
         "font-hack-nerd-font"
+        "wezterm"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
@@ -87,6 +87,7 @@
             '';
 
       system.defaults = {
+        dock.autohide = true;
         finder.FXPreferredViewStyle = "clmv";
         NSGlobalDomain.KeyRepeat = 2;
       };

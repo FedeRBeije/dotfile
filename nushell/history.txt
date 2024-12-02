@@ -1627,3 +1627,224 @@ clear
 cd aerospace
 aerospace list-apps
 nvim
+clear
+cd .config
+clear
+clear
+cd example
+clear
+clear
+clear
+ls
+clea
+clear
+cd documents
+ls
+cd projects
+ls
+git clone git@github.com:federicoReghini/toto.git
+mkdir toto
+cd toto
+git init
+nvim
+git config --global init.defaultBranch main
+clear
+cd ..
+ls
+ls
+la
+cd .git
+cd toto
+nvim
+cd
+la
+vim .git
+cd .git
+nvim
+cd
+clera
+clear
+cd ~/.gitconfig
+cd .gitconfig
+git config --global --list<\n>
+vim ~/.gitconfig
+cd ~/.gitconfig
+vim ~/.gitconfig
+cd .ssh
+nvim
+git fetch
+nvim
+git fetch
+clear
+git branch -M main
+clear
+bun create qwik@latest
+npm create qwik@latest
+npm run qwik add tailwind
+cd toto
+npm run qwik add motion
+npm install motion
+npm run start
+npm run preview
+clear
+cd ..
+cd toto
+nvim
+clear
+npm create qwik@latest
+npm run qwik add motion
+npm run qwik add tailwind
+clear
+npm install motion
+nvm ls
+clear
+nvm
+nvm ls
+clear
+nvim
+nvim
+cd ..
+cd toto
+clear
+nvim
+npm run preview
+npm run dev
+clear
+npm run lint
+npm run dev
+clear
+nvim
+cd .config
+nvim
+clear
+nvim
+npm run dev
+cd toto
+clear
+cd documents
+cd downloads
+cd ..
+ls
+cd downloads
+ls
+npm run dev
+clear
+clear
+:qa
+clear
+nvim
+clear
+nix search nixpkgs syncthing
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+nvim
+gf
+npm run dev
+npm install --save react-native-signature-canvas --workspace=my-clienteling
+npm run build
+npm install -g eas-cli
+npm run build
+clear
+eas device:create
+npm run build
+clear
+gitc
+npx expo-doctor
+npx expo install --check
+nvim
+npx expo install expo@latest
+npx expo install --fix
+npx expo-doctor@latest
+npx expo install --check
+npx expo install --fix
+npx expo-doctor
+npx expo install metro@^0.81.0 && metro-resolver@^0.81.0 && metro-config@^0.81.0
+npx expo install metro@^0.81.0 
+npx expo install metro-resolver@^0.81.0 
+npx expo install metro-config@^0.81.0 
+npx expo-doctor@latest
+npx expo install metro@latest
+npx expo-doctor@latest
+nvim
+npx expo-doctor@latest
+npx expo install --fix
+npx expo install --check
+clear
+npm run build
+clear
+npx lint-staged
+nvim
+ear
+clear
+turbo gen workspace --type app --name mc 
+cd apps/native/mc
+npx create-expo-app@latest
+nvim
+npx create-expo-app@latest
+nvim
+cd ..
+cd retail
+npm i
+turbo clean
+clear
+nvim
+npm i
+clear
+nvim
+cd mc
+npm run dev
+cd packages/cli
+npm run build
+nvim
+cd ..
+ls
+cd cli
+nvim
+npm run build
+cd retail
+npm i
+clear
+cd packages/cli
+npm run build
+cd mc
+npm run dev
+clint login
+npm run dev
+cd ..
+nvim
+cd mc
+npm run dev
+clear
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+nix search nixpkgs wezterm
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+y
+cd .config/nix
+nvim 
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+nvim
+clear
+nvim
+npx expo-doctor@latest
+npm why metro
+nvim
+clear
+cd ..
+cd mycli
+nvim
+cd clienteling
+nix search nixpkgs vscode
+clear
+nvim
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+q
+clear
+cd .config/nix
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+vim nix
