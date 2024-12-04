@@ -1851,3 +1851,307 @@ vim nix
 nvim
 clear
 nvim
+clear
+nvim
+clear
+npm run dev
+clear
+nvim
+cd retail
+gitc
+nvim
+clear
+clear
+npm i
+clear
+clear
+npm run de
+vim nix
+nvim
+gf
+git pull
+nvim
+git pull
+nvim
+npm run build
+cd lib
+npm publish
+cd ..
+clear
+npm i
+nvim
+npm run dev
+git reset --soft HEAD~1
+nvim
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+which stow
+clear
+stow .
+nvim
+cd
+la
+cat .zshrc ~/.config/.zshrc
+clear
+cd .config
+nvim
+cd
+vim .zshrc
+cd .config
+vim .zshrc
+cd
+nvim
+cd .config
+stow .
+ls -a
+rm .DS_Store
+ls -a
+stow .
+clear
+cd $HOME
+cd $env.HOME
+ls -lah .zshrc
+clear
+cd .config
+vim nix
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+cd
+vim
+clear
+cd .config
+clera
+clear
+clear
+clear
+nvim
+clear
+cd ebsn
+clear
+nvim
+npm i
+clear
+gf
+vim
+nvim
+clear
+nvim
+gf
+git pull origin develop
+nvim
+npm run test:light-report
+npm i
+npm run test:light-report
+clear
+nvim
+git pull
+nvim
+clear
+npm run dev
+clear
+npm run dev
+npx expo-doctor
+npx expo install --fix
+clear
+npm run dev
+clear
+npm i
+nvim
+npm run build
+cd lib
+npm run publish
+npm publish
+cd ..
+clear
+npm run test:light-report
+c;ear
+clear
+npm run dev
+cd
+la
+vim .zshrc
+cd .config
+npm run build
+cd lib
+npm publish
+npm i
+nvim
+clear
+clera
+clear
+cd ..
+clear
+nvim
+clear
+cd projects
+ls
+cd toto
+clear
+cd toto
+clear
+npm run dev
+clear
+nvim
+clear
+git push
+nvi
+nvim
+git init
+git add remote origin git@github.com:federicoReghini/toto.git
+git remote add origin git@github.com:federicoReghini/toto.git
+git add .
+git commit -m "first commit"
+git push -u origin main
+git push -u origin main
+clear
+nvim
+gf
+gp
+git pull
+clear
+git config --help
+git config ls
+git config
+git config --help
+git config list
+git config pull.rebase --help
+git config list
+clear
+nvim
+npm run dev
+clear
+npm i react-native-signature-canvas --filter=my-clienteling
+nvim
+npm i
+:qa
+npm run build
+cd toto
+cd ..
+mkdir hackethon
+cd hackethon
+touch pf.js
+nvim
+clear
+cd hackethon
+vim pf.js
+node pf.js
+node da2.js
+node day2.js
+npm run dev
+clear
+npm run dev
+gf
+nvim
+clear
+clear
+git checkout package/core
+git checkout -b package/core
+cd core
+cd packages/core
+cd retail
+cd packages/core
+cd retail
+cd packages/core
+clear
+clear
+nvim
+cd ..
+cd retail
+turbo gen workspace --type packages --name ui 
+cd packages/ui
+cd retail
+cd packages/ui
+npx create-expo-app --template expo-template-blank-typescript
+npx -p @storybook/cli sb init --type react_native
+npx degit chromaui/intro-storybook-react-native-template#main taskbox
+npm i
+npm run storybook:ios
+npx expo-doctor
+npx expo install --check
+clear
+npm i
+clear
+npm run storybook:ios
+npm i
+npm expo-doctor
+npx expo-doctor
+npx expo install --check
+nvim
+npm run storybook:ios
+npm start -- --reset-cache
+npm run storybook:ios
+npm run start
+npm run storybook:ios
+nvim
+clear
+npm i
+npm run storybook:ios
+clear
+cd toto
+cd ..
+npx degit chromaui/intro-storybook-react-native-template#main taskbox
+cd taskbox
+nvim
+npm i
+npm run storybook:ios
+nvm ls
+cd
+curl -fsSL https://fnm.vercel.app/install | bash
+cd 
+la
+la | where name === .fnm
+la | where name == .fnm
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>
+clear
+node
+clear
+nvm
+which nvm
+which node
+clear
+which fnm
+clear
+cd
+la
+la | where name == .fnm
+^ls
+^nvm
+which fnm
+fnm
+fnm install node
+fnm install 20.17.0
+sudo find / -name ".fnm" 2>/dev/null<\n>
+sudo find / -name ".fnm"<\n>
+find ~ /etc -name ".fnm"
+sudo find ~ /etc -name ".fnm"
+^find ~ /etc -name ".fnm"
+clear
+find . -name ".fnm"
+sudo find / | where $it =~ /\.fnm$/ | each { echo $it }<\n>
+sudo find / | where $it =~ /\.fnm$/ 
+ls ~ --recursive | where name =~ /\.fnm$/<\n>
+cd .config
+la
+which fnm
+find .fnm
+la | where name == .fnm
+cd 
+la | where name == .fnm
+clear
+fnm --versom
+fnm --version
+fnm list-version
+fnm list-remote
+fnm install "v23.3.0"
+fnm list
+fnm use "v23.3.0"
+source ~/.config/nushell/config.nu
+split column --help
+source ~/.config/nushell/config.nu
+fnm use "v23.3.0"
+node -V
+node --version
+fnm use default
+node --version
+darwin-rebuild switch --flake ~/.config/nix#mini<\n>

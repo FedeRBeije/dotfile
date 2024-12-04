@@ -13,7 +13,7 @@ return {
 
       -- See Configuration section for rest
       window = {
-        layout = "vertical",
+        layout = "float",
         relative = "editor",
         border = "rounded",
       },
