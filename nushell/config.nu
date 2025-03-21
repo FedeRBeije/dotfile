@@ -920,6 +920,13 @@ def gitd [] {
     }
 }
 
+def gitD [] {
+    let branch = (git branch | fzf| into string | str trim)
+        if $branch != null {
+            git branch -D $branch
+    }
+}
+
 
 use ~/.cache/starship/init.nu
 
@@ -935,6 +942,9 @@ alias gf = git fetch
 
 # Zoxide
 alias cd = z
+
+# Python
+alias pip = pip3
 
 # Neovim
 alias v = vim
@@ -954,3 +964,6 @@ $env.PATH = ($env.PATH
     | split row (char esep)
     | prepend $"($env.FNM_MULTISHELL_PATH)/bin"
 )
+
+
+$env.PATH = ($env.PATH | prepend "/opt/homebrew/bin")

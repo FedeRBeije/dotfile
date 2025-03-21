@@ -26,6 +26,7 @@ return {
 
     mason_lspconfig.setup({
       -- list of servers for mason to install
+      automatic_installation = true,
       ensure_installed = {
         -- "tsserver",
         "ts_ls",
@@ -36,6 +37,8 @@ return {
         "emmet_ls",
         "prismals",
         "pyright",
+        "jsonls",
+        "yamlls",
       },
     })
 
@@ -45,6 +48,9 @@ return {
         "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
+        "debugpy",
+        "flake8",
+        "mypy",
         "pylint",
         "eslint_d",
       },

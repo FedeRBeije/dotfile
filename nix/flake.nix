@@ -25,6 +25,7 @@
         pkgs.carapace
         pkgs.discord
         pkgs.docker
+        pkgs.ffmpeg_6
         pkgs.fnm
         pkgs.gh
         pkgs.mkalias
@@ -53,6 +54,7 @@
           "git"
           "mas"
           "nushell"
+          "pnpm"
           "starship" 
           "thefuck" 
           "zoxide"

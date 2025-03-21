@@ -4,7 +4,7 @@ return {
     branch = "main",
     dependencies = {
       { "github/copilot.vim" }, -- or github/copilot.vim
-      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+      -- { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
     },
     build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
@@ -13,9 +13,8 @@ return {
 
       -- See Configuration section for rest
       window = {
-        layout = "float",
+        layout = "vertical",
         relative = "editor",
-        border = "rounded",
       },
       auto_follow_cursor = false,
       prompts = {

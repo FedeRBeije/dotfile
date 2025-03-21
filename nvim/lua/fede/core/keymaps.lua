@@ -44,5 +44,16 @@ keymap.set("n", "<leader>os", ":ObsidianSearch<cr>", { desc = "Search obsidian n
 keymap.set("n", "<leader>oqs", ":ObsidianQuickSwitch<cr>", { desc = "Quick Switch" })
 keymap.set("n", "<leader>ob", ":ObsidianBacklinks<cr>", { desc = "show location list of backlinks" })
 keymap.set("n", "<leader>ot", ":ObsidianTemplate<cr>", { desc = "follow link under cusor" })
--- noice
-keymap.set("n", "<leader>nc", "<cmd>NoiceDismiss<CR>", { desc = "Close notification" })
+-- Copilot
+local function toggle_copilot()
+  if vim.g.copilot_enabled then
+    vim.cmd("Copilot disable")
+    vim.g.copilot_enabled = false
+  else
+    vim.cmd("Copilot enable")
+    vim.g.copilot_enabled = true
+  end
+end
+
+vim.g.copilot_enabled = false
+keymap.set("n", "<leader>ct", toggle_copilot, { desc = "Toggle Copilot" })
