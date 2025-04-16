@@ -6297,3 +6297,994 @@ source ~/.config/nushell/config.nu
 pip --version
 clear
 vim
+nvim
+vim
+python -m venv ~/.venvs/nvim<\n>
+source ~/.venvs/nvim/bin/activate<\n>
+vim
+cd gino
+git remote add origin git@github.com:federicoReghini/moletta-gino-site.git
+:qa
+vim
+git remote add origin git@github.com:federicoReghini/moletta-gino-site.git
+clear
+cd 
+cd .ssh
+ls
+vim
+git add .
+git push
+git push -u origin main
+cd gino
+clear
+cd gino
+git add .
+git commit -m "new images"
+vim
+npm run dev
+clear
+vim
+vim
+cd .config
+vim
+source ~/.config/nushell/env.nu
+clear
+source ~/.config/nushell/config.nu
+clear
+npm run dev
+npm i react-icons/fi
+npm i react-icons
+cd example
+cd gino
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd nushell
+vim
+source ~/.config/nushell/config.nu
+vim
+source ~/.config/nushell/config.nu
+clear
+cd gino
+clear
+gf
+npm run build
+cd lib
+npm publish
+cd ..
+npm i
+gf
+git pull
+clear
+vim
+npm run dev
+npm i react-swipable
+npm i react-swipeable
+npm run dev
+npm i keen-slider
+cd toto
+cd ..
+rm -rf toto
+npx create-next-app@latest toto-site --typescript --tailwind --eslint --app
+cd toto
+ls
+cd toto-site
+cd toto
+cd toto-site
+cd projects
+ls
+cd toto-site
+clear
+npm install motion
+npx tailwindcss init --ts<\n>
+npm run dev
+npm i @tailwindcss/aspect-ratio react-intersection-observer
+npm run dev
+npm run dev
+docl
+docker compose up
+ping google.com
+docker exec -it <container_id> bash
+docker exec -it acbe9ad82214cac8af740e20253ddce9ca7796e372adc2a8f697a696edaba3d3 bash
+clear
+npx turbo build --filter=cli
+npx turbo build --filter=cli
+vim
+npx turbo build --filter=@clienteling/cli
+clint login
+clint login
+vim
+cd ..
+cd clienteling
+npx turbo dev --filter=my-clienteling
+c.ear
+clear
+clear
+npm run dev
+npm run dev
+cd retail
+npx turbo dev --filter=my-clienteling
+eas device:add --platform ios --udid 00008130-0006313811E2001C
+eas device
+eas device:create --platform ios --udid 00008130-0006313811E2001C
+cd clienteling
+eas device:create --platform ios --udid 00008130-0006313811E2001C
+npm run build
+vim
+gf
+git pull
+vim
+git pull
+vim
+clear
+gf
+git pull origin feature/444-appointment-page-refactor
+git push
+clear
+vim
+clear
+vim
+npm run build
+eas build --platform ios --profile development_client_simulator
+docker compose up
+docker compose down
+docker compose up
+vim
+docker compose down
+docker compose up
+docker compose up -d
+clear
+docker compose logs -f
+docker compose down
+docker compose up -d
+docker compose logs -f
+clear
+vim
+gf
+git push
+git checkout feature/minor-fixes
+git merge develop
+vim
+clear
+gitc
+gf
+git pull
+clear
+rp generate-localization
+clear
+npm run dev
+npm i
+cd ui
+vim
+npm run dev
+npm run build
+npm run dev
+gf
+clear
+vim
+npm run build
+npm run dev
+npx tailwindcss init -p<\n>
+npm run dev
+cd toto
+npm install tailwindcss @tailwindcss/postcss postcss
+npm install tailwindcss @tailwindcss/postcss postcss
+cd projects
+ls
+npx create-expo-module expo-skeleton-placeholder<\n>
+cd expo-skeleton-placeholder
+cd projects
+cd expo-skeleton-placeholder
+cd expo-skeleton
+npm i expo-linear-gradient
+vim
+npm i
+npm install
+cd example
+ls
+npm run dev
+npm run start
+npx expo install react-native-reanimated
+npm run start
+vim
+npm run start
+cd ..
+git init
+git remote add origin git@github.com:federicoReghini/expo-skeleton-placeholder.git
+vim
+git add .
+git commit -m "first commit"
+git push
+fuck,
+git push --set-upstream origin main
+git reset --soft HEAD~1
+git config user.email "federicoreghini@gmail.com"
+git config user.name "federicoReghini"
+vim
+git push origin <nome-del-branch> --force<\n>
+git push origin main --force<\n>
+clear
+npm whoami
+npm run build
+npm publish
+npm i
+npm publish
+npm publish --registry=https://npm.pkg.github.com
+git remote add origin git@github.com:federicoReghini/expo-skeleton-placeh.git
+vim
+git remote add origin git@github.com:federicoReghini/expo-skeleton-placeh.git
+npm publish --registry=https://npm.pkg.github.com
+git add .
+git push --set-upstream origin main
+git commit -m "first commit"
+git push
+vim
+git reset --soft HEAD~1<\n>
+vim
+git rm --cached .npmrc
+vim
+git reset --soft HEAD~1<\n>
+clear
+vim
+npm publish
+npm publish --registry=https://npm.pkg.github.com
+vim
+npm publish
+npm i
+npm publish
+nvim
+npm publish
+clear
+nvim
+clear
+npm run dev
+vim
+npm publish
+vim
+npm publish
+vim
+cd retail
+npm i
+cd ui
+ls
+vim
+vim
+cd retail
+npm i
+npm run dev
+cd ui
+cd example
+vim
+npm publish
+vim
+cd retail
+npm i
+cd ui
+npm run dev
+npm run start
+vim
+cd example
+npm run start
+clear
+cd ..
+vim
+npm publish
+npm run start
+clear
+cd ..
+clear
+vim
+vi
+gf
+git pull
+vim
+npm run test:mock-activity
+clear
+gf
+vim
+npm run build
+cd lib
+npm publish
+cd ..
+clear
+npm run test:mock-activity
+clear
+vim
+clear
+clear
+npm run dev
+clear
+npm run dev
+vim
+cd ..
+cd cli
+clint login
+npm run start
+vim
+npm run start
+vim
+npm run start
+vim
+cd retail
+vim
+npx turbo start --filter=my-clienteling
+clear
+nvim
+clear
+vim
+cd lib
+npm publish
+cd ..
+clear
+npm i
+vim
+gf
+git pull
+npm i
+clear
+clear
+cd packages/cli
+vim
+cd retail
+git checkout feature/444-appointment-page-refactor
+gf
+git pull origin develop
+nvim
+vim
+gitc
+clear
+git checkout feature/428-android-fix
+gf
+git pull origin develop
+git push
+clear
+gitc
+git checkout feature/447-skeleton-placeholder-substitution
+npm i
+cd ui
+vim
+cd retail
+npm i
+clear
+vim
+clear
+git pull origin develop
+vim
+cd ui
+vim
+cd retail
+clear
+gitc
+gf
+git pull origin develop
+git push
+npm run start
+clear
+pip show requests
+source ~/.config/nushell/config.nu
+pip show requests
+pip install requests
+python -m venv venv<\n>
+source venv/bin/activate<\n>
+gf
+git pull origin develop
+git pull
+git pull origin develop
+clear
+git push
+clear
+vim
+cd
+cd .config
+activate_env
+source ~/.config/nushell/config.nu
+activate_env
+activate_venv
+source ~/.config/nushell/config.nu
+activate_venv
+python --version
+which python
+activate_venv
+which python
+which python3<\n>
+$env.PATH = ($"($env.VIRTUAL_ENV)/bin" | prepend $env.PATH)<\n>
+source ~/.config/nushell/config.nu
+activate_venv
+which python
+overlay use  venv/bin/activate<\n>
+virtualenv cheshire
+pip install virtualenv<\n>
+pip install virtualenv --break-system-packages<\n>
+virtualenv cheshire
+clear
+which python
+overlay use  venv/bin/activate.nu
+overlay use  cheshire/bin/activate.nu
+pip install requests pydantic cat<\n>
+pip install requests pydantic
+clear
+vim
+overlay use  cheshire/bin/activate.nu
+docker compose up -d
+gitc
+git pull
+npm i
+clear
+vim
+clear
+npm run build
+clint login
+cd cli
+cd retail
+cd packages/cli
+vim
+cd cli
+clint logout
+clint login
+npm run build
+clear
+npx expo-doctor
+npx expo check
+npx expo-check
+clear
+npm run build
+clear
+vim
+cd nvim
+ls
+vim
+vim
+clear
+cd cheshire-cat-ai
+clear
+pip install requests pydantic
+docker compose logs -f
+clear
+gf
+vim
+npm run test:mock-hractivity
+nvim
+clear
+vim
+gf
+git checkout feature/450-mocked-planner-api
+vin
+vim
+clear
+gitc
+clear
+npm run ios-tf
+vim
+npm run ios-tf
+npm install -g eas-cli 
+sudo npm install -g eas-cli 
+npm run ios-tf
+vim
+npm run ios-tf
+vim
+gf
+gitc
+clear
+gitc
+git pull
+clear
+vim
+vm
+vim
+npm run ios-tf-prod
+gitc
+vim
+gitc
+vim
+npm run ios-tf-prod
+vim
+git checkout release
+git merge develop
+npm i
+npm run ios-tf-prod
+vim
+npm run dev
+gitc
+vim
+gitd
+gitD
+git checkout production
+vim
+clear
+cd myclienteling-app-mobile
+npm run dev
+clear
+npm run ios-tf-prod
+vim
+clear
+gitc
+clear
+npm run build_wave
+clear
+gitc
+npm i
+clear
+c
+clear
+npm run ios-tf-prod
+npm run dev
+clear
+gitc
+vim
+gitc
+vim
+npm i
+npm run test:mock-hractivity
+npm run ios-tf-prod
+npm run build_wave
+clear
+clear
+git checkout feature/450-mocked-planner-api
+clear
+vim
+gf
+git pull
+clear
+c;aer
+clear
+git merge develop
+eas whoami
+clear
+gitc
+git merge develop
+clear
+npm run ios-test-tf
+npm i
+gitc
+vim
+clear
+gitc
+vim
+npm run ios-test-tf
+npm run build_wave
+clear
+vim
+clear
+npm run dev
+clear
+cd nvim
+vim
+vim
+clear
+cd toto-site
+ls
+cd ..
+ls
+cd ..
+ls
+cd projects
+ls
+cd ../..
+ls
+cd projects
+ls
+cd toto-site
+npm install embla-carousel-react<\n>
+clear
+tmux attach -t work
+tmux detach
+tmux
+vim
+vim
+clear
+cd clienteling
+gitc
+clear
+gf
+git pull
+clear
+clint project
+npm run dev
+npm run test:mock-hractivity
+npm run  build
+gf
+cd lib
+npm publish
+cleaf
+cd retail
+npm i
+cd ..
+npm run  build
+cd lib
+npm publish
+cd ..
+npm run  build
+cd lib
+npm publish
+npm i
+cd ..
+npm run test:mock-hractivity
+npm run build_wave
+npm run build
+cd lib
+npm publish
+cd ..
+gf
+clear
+clera
+gf
+git pull
+clear
+clint project
+clear
+nvim
+clear
+npm run test:mock-hractivity
+npm run build
+cd lib
+npm publish
+cd ..
+npm i
+cd ebsn
+npm run test:mock-hractivity
+npm run dev
+vim
+gf
+vim
+npm run build
+cd lib
+npm publish
+cd ..
+npm i
+npm run test:mock-hractivity
+npm run build
+clear
+npm run build
+cd lib
+npm publish
+cd ..
+clear
+npm run build;
+cd lib 
+npm publish
+cd ..
+npm i
+npm run dev
+cd packages/ui
+vim
+cd retail
+clear
+vim
+gitc
+git checkout feature/455-update-planner-data
+clear
+claer
+clear
+gf
+git pull
+vim
+clear
+gitc
+clear
+cd packages/ui
+npm run dev
+vim
+cd retail
+cd packages/ui
+vim
+cd retail
+gf
+git push
+clear
+gf
+npm run build;
+cd lib
+npm publish
+cd ..
+npm i
+gf
+npm run dev
+vim
+npm run build
+cd lib
+npm publish
+cd nvim
+vim
+clear
+gitc
+gf
+git pull
+clear
+npm i
+git merge develop
+nvim
+git merge develop
+vim
+clear
+nvim
+vim
+clear
+clear
+clear
+gh copilot explain "sudo apt-get"<\n>
+gh extension upgrade gh-copilot<\n>
+gh --version
+gh extension upgrade gh-copilot<\n>
+brew uninstall -g gh
+brew uninstall  gh
+whic gh
+which gh
+npm uninstall -g gh<\n>
+which gh
+gh --version
+gh extension upgrade gh-copilot<\n>
+gh repo view
+gh pr list
+gh issue list
+gh --version
+gh auth status
+gh copilot explain "sudo apt-get"<\n>
+gh extension install github/gh-copilot
+gh extension upgrade gh-copilot<\n>
+gh extension remove gh-copilot
+gh extension install gh-copilot
+gh extension install github/gh-copilot
+gh copilot explain "sudo apt-get"<\n>
+gh copilot -h
+gh copilot suggest "How to tag a commint"
+clear
+gh copilot explain "git tag"
+clear
+gitc
+gf
+git pull
+clear
+cd vin
+cd nvim
+cd ..
+npm run build
+cd lib
+npm publish
+npm i
+cd ..
+npm run build
+cd lib
+npm publish
+cd ..
+npm run build
+cd lib
+npm publish
+npm i
+gf
+clear
+npm install -g npm @11.3.0
+npm install -g npm@11.3.0
+clear
+rp generate-localization
+gf
+git pull
+clear
+npm i
+npm run dev
+clear
+gf
+clear
+npm run update
+npm run update
+npm run dev
+clear
+npm run build
+npm run update
+clear
+npm run update
+gf
+clear
+tmux attach -t work
+clear
+npm run dev
+npm run update
+cd ..
+npm run build
+cd lib
+npm publish
+cd ..
+npm i
+npm run dev
+clear
+npm run dev
+clear
+npm run update
+cd myclienteling-app-services
+vim
+cd myclienteling-app-mobile
+cd myclienteling-app-services
+vim
+npm i
+npm run build_wave
+clear
+vim
+gf
+vim
+npm publish
+vim
+gf
+vim
+gf
+vim
+gf
+clear
+gf
+vim
+gf
+npm publish
+vim
+npm i
+npm run build_wave
+clear
+vim
+git remote -v
+gf
+npm run update
+npm run build
+clear
+vim
+npm run dev
+npm run upda
+npm run update
+clear
+gf
+gf
+vim
+gf
+vim
+gf
+cd
+cd myclienteling-app-services
+cd ..
+ls
+git clone git@github.com:EngineeringRetailPlatform-Champion/myclienteling-app-services.git mc-app-services
+git config user.name
+git config -g user.name
+git config  user.name
+clear
+git clone git@github.com:EngineeringRetailPlatform-Champion/myclienteling-app-services.git mc-app-services
+clear
+git clone git@github.com:EngineeringRetailPlatform-Champion/myclienteling-app-services.git mc-app-services
+git clone git@github.coam-eng:EngineeringRetailPlatform-Champion/myclienteling-app-services.git mc-app-services
+cd ssh
+vim
+git clone git@github.com-eng:EngineeringRetailPlatform-Champion/myclienteling-app-services.git mc-app-services
+ssh-keygen -p -f ~/.ssh/git_company_eng
+vim
+ssh-keygen -p -f ~/.ssh/git-company-eng
+cd
+cd .ssh
+vim
+ssh-keygen -p -f ~/.ssh/github-company-eng
+eval "$(ssh-agent -s)"<\n>
+let-env SSH_AUTH_SOCK = (ssh-agent -c | lines | where $it =~ 'SSH_AUTH_SOCK' | get 0 | split row '=' | get 1 | str trim)<\n>
+cd nushell
+cd .config
+cd .ssh
+vim
+vim
+source ~/.config/nushell/env.nu
+cd .config/nushell
+vim
+source ~/.config/nushell/env.nu
+vim
+source ~/.config/nushell/env.nu
+vim
+source ~/.config/nushell/env.nu
+vim
+source ~/.config/nushell/env.nu
+clear
+clear
+clear
+cd .config/nushell
+vim
+nvim
+clear
+vim
+clear
+npm run dev
+npm i
+nvim
+gf
+clear
+rp generate-localization
+npm run dev
+npm run update
+clear
+npm run update
+rp generate-localization
+npx lint-staged
+clear
+npm run dev
+npm run update
+vim
+cd packages/ui
+cd ..
+cd cli
+vim
+npm run build
+cd ..
+clear
+npm run update
+cd myclienteling-app-services
+cd myclienteling-app-mobile
+clear
+cd myclienteling-app-components
+vim
+clear
+cd myclienteling-app-components
+cd myclienteling-app-mobile
+cd myclienteling-app-components
+vim
+clear
+npm run dev
+npm run build_wave
+clear
+eas build -p ios --profile preview
+clear
+vim
+gf
+vim
+gf
+npm run dev
+npm run update
+clear
+npm run build_wave
+npm run dev
+clear
+git pull
+clear
+npm run dev
+npm run update
+rp generate-localization
+vim
+cd nvim
+vim
+clear
+npm install -g @anthropic-ai/claude-code
+vim
+claude
+clear
+nvim
+gf
+git pull
+vim
+claude
+vim
+claude
+vim
+cd clienteling
+claude
+vim
+npm run dev
+cd myclienteling-app-mobile
+npm run dev
+claude
+clear
+npm run dev
+tmux attach -t work
+clear
+vim
+git checkout feature/min-fixes
+git pull origin develop
+git pull
+vim
+clear
+clear
+cd clienteling
+cd retail
+clear
+cloude
+gitc
+gf
+git pull
+vim
+npm run dev
+cd packages/ui
+clear
+npm run dev
+clear
+vim
+cd clienteling
+gf
+npx lint-staged
