@@ -7288,3 +7288,488 @@ vim
 cd clienteling
 gf
 npx lint-staged
+vim
+vim
+clear
+vi
+vim
+gf
+git pull
+gf
+clear
+npm run dev
+vim
+vim
+nvim --version
+clear
+cd clienteling
+npx expo-doctor@latest
+npm run build 
+clear
+npm run build
+cd retail
+npm i
+npm run build
+cd clienteling
+npm run build
+cd retail
+npm i
+git checkout -b feature/expo-new-arch
+clear
+npx react-compiler-healthcheck@latest
+cd clienteling
+npm run dev
+cd clienteling
+clear
+vim
+npm run dev
+cd clienteling
+npm run dev
+gitc
+vim
+cd retail
+npm i
+npm run dev
+cd clienteling
+nvim
+clear
+gitc
+cd clienteling
+cd retail
+npmi
+npm i
+cd clienteling
+npx expo-doctor@latest
+vim
+clear
+npm run dev
+cd retail
+npm i
+cd clienteling
+npm run dev
+clear
+claude
+clear
+npm run build
+vim
+gitc
+npm run dev
+npm i
+vim
+gitc
+np i
+npm i
+npm run dev
+cd reatil
+cd retail
+npm i
+clear
+cd clienteling
+npm run dev
+vim
+gitc
+cd retail
+npm i
+cd clienteling
+vim
+gf
+npm run build
+cd lib
+npm publish
+cd ..
+clear
+git push
+vim
+git config user.name
+vim
+git config user.name "federicoReghini"
+git config user.email "federicoreghini@gmail.com"
+npm run dev
+npm install sharp
+node scripts/process-images.js
+clear
+npm run build
+cd lib
+npm p;
+npm publish
+cd ..
+clear
+npm run dev
+node scripts/process-images.js
+npm run build && npm run start
+npm run build; npm run start
+npm run start -p 3002
+npm run dev
+npm run build; npm run start
+npm run build; npm run start --port 3002
+npm run build; npm run start
+lsof -i :3000 | grep LISTEN
+kill 5108
+clear
+npm run start
+lsof -i :3000 | grep LISTEN
+npm run build
+lsof -i :3000 | grep LISTEN
+npm run start
+clear
+vim
+clear
+gitc
+git pull
+git pull origin develop
+clear
+nvim
+git push
+nvim
+clear
+gitc
+git merge feature/min-fix
+gitc
+git merge feature/min-fixes
+vim
+npm i
+clear
+vim
+npm run dev
+npm run dev
+npm run build && npm run lint
+npx jest src/components/__tests__/Gallery.test.tsx
+npm install --save-dev jest-environment-jsdom
+npx jest src/components/__tests__/Gallery.test.tsx
+npm install --save-dev @testing-library/react @testing-library/jest-dom @types/jest
+npx jest src/components/__tests__/Gallery.test.tsx
+npm install --save-dev @babel/preset-env @babel/preset-react @babel/preset-typescript babel-jest
+npx jest src/components/__tests__/Gallery.test.tsx
+npm run build && npm run start
+npm run build; npm run start
+npm run build
+npm run start
+npm run build
+npm run start
+npm run start
+npm run build; npm run start 
+npm run build
+npm run dev
+vim
+gf
+git cheocut feature/462-cloudchart-filters-improvement
+git cheockut feature/462-cloudchart-filters-improvement
+git checkout feature/462-cloudchart-filters-improvement
+git pull origin develop
+clear
+git push
+gitc
+git checkout features/464-progress-bar
+gf
+git pull origin develop
+clear
+vim
+gitc
+git pull
+git merge features/464-progress-bar
+git push
+clear
+git checkout feature/469-planner-margins
+gf
+git checkout feature/469-planner-margins
+git fetch
+git pull
+nvim
+gitc
+git pull
+gitc
+git merge features/464-progress-bar
+git pull origin develop
+git push
+clear
+gitc
+gitd
+clear
+vim
+gf
+git pull 
+vim
+git pull
+clear
+vim
+gf
+nvi
+vim
+clear
+gitc
+gf
+git pull
+git merge develop
+clear
+git push
+vim
+gitc
+vim
+gf
+git pull
+vim
+clear
+npm run start
+npm run build && npm start
+clear
+npm run dev
+vim
+gf
+git pull
+git push
+clear
+npm run build
+npm run start
+clear
+npm run build
+npm run start
+npm run start
+npm run build
+npm run start
+npm run build && npm run start
+npm run build; npm run start 
+npm run build
+npm run start
+npm run dev
+ipconfig getifaddr en0
+npm run build; npm run start 
+npm run lint && tsc --noEmit
+npm run lint; tsc --noEmit
+npm run build; npm run start 
+npm run dev
+npm run build
+tmux attach -t work
+clear
+clear
+npm run start
+clear
+npm run dev
+clear
+vim
+npm run start
+clear
+npm run start
+clear
+clear
+npm run dev
+clear
+clear
+clear
+nvim
+vim
+vim
+cd packages/ui
+vim
+cd packages/cli
+cd retail
+npx turbo start --filter=my-clienteling
+cd clienteling
+clint update
+npm run update
+clear
+npm run update
+vim
+npm run update
+vim
+vim
+gitc
+git merge develop
+clear
+cd myclienteling-app-mobile
+cd myclienteling-app-components
+nvim
+cd retail
+npm i
+cd clienteling
+npm run build
+clea
+clear
+npx expo-doctor@latest
+cd retail
+npm i
+cd clienteling
+npx expo-doctor@latest
+npm run build
+clear
+eas build -p ios --profile preview
+cd packages/cli
+vim
+npm run build
+cd clienteling
+npm run build
+cd retail
+npm i
+vi
+npm run dev
+npm run start
+clear
+npm run dev
+clear
+npm run start
+vim
+vim
+npm i
+npm run build
+cd clienteling
+npm run build
+gf
+git pull origin develop
+vim
+git pull origin develop
+clear
+cd retail
+npm i
+nvim
+npm run update
+clear
+npm run build
+cd .config/nushell
+vim
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+vim
+source ~/.config/nushell/config.nu
+vim
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+cd ..
+z --version
+cd .config
+clear
+source ~/.config/nushell/env.nu
+clear
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+z --version
+clear
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+z --version
+cd .config
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+clear
+source ~/.config/nushell/config.nu
+cd .config
+zoxide --version<\n>
+zoxide .config
+zoxide z .config
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/env.nu
+cd .config
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd ..
+clear
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd ..
+which z
+which cd
+z
+source ~/.config/nushell/.zoxide.nu
+cd .config
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+which zoxide
+clear
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+cd .config
+vim
+cd ..
+vim
+cd .zoxide.nu
+ls
+la
+vim .zoxide.nu
+$nu.env-path
+$nu.config-path
+clear
+source ~/.config/nushell/config.nu
+cd .config
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/env.nu
+source ~/.config/nushell/config.nu
+clear
+source ~/.config/nushell/config.nu
+clear
+cd .config
+source ~/.config/nushell/config.nu
+cd .config
+source ~/.config/nushell/config.nu
+cd ..
+:qa
+cd nvim
+clear
+source ~/.config/nushell/config.nu
+clear
+clear
+npm run build
+cd clienteling
+npm run build
+clear
+source ~/.config/nushell/config.nu
+clear
+cd .config
+env
+cd .config
+clear
+source ~/.config/nushell/config.nu
+cd .config
+nushell --version
+nu --version
+cd .zshrc
+cd ..
+cd toto-site
+cd ..
+cd
+:qa
+:q
+vim .zshrc
+clear
+cd toto-site
+brew upgrade zoxide
+zoxide --version<\n>
+z ..
+source ~/.config/nushell/config.nu
+cd toto-site
+zoxide -h
+zoxide init
+zoxide init nu
+zoxide init nushell
+cd toto-site
+nushell --version
+nu --version
+which nushell
+which nu
+source ~/.config/nushell/config.nu
+cd toto-site
+source ~/.config/nushell/config.nu
+cd toto-site
+source ~/.config/nushell/config.nu
+cd toto-site
+clear
+vim
+clear
+cd nushell
+clewar
+clear

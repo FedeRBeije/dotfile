@@ -115,10 +115,11 @@ path add /opt/homebrew/bin
 
 $env.EDITOR = 'nvim'
 
-
 starship init nu | save -f ~/.cache/starship/init.nu
 
-zoxide init nushell | save -f ~/.zoxide.nu
+zoxide init nushell --cmd=cd | save -f ~/.zoxide.nu
+
+
 
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 mkdir ~/.cache/carapace

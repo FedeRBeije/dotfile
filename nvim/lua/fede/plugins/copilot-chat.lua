@@ -1,10 +1,38 @@
+local prompts = {
+  -- Code related prompts
+  Explain = "Please explain how the following code works.",
+  Review = "Please review the following code and provide suggestions for improvement.",
+  Tests = "Please explain how the selected code works, then generate unit tests for it.",
+  Refactor = "Please refactor the following code to improve its clarity and readability.",
+  FixCode = "Please fix the following code to make it work as intended.",
+  FixError = "Please explain the error in the following text and provide a solution.",
+  BetterNamings = "Please provide better names for the following variables and functions.",
+  Documentation = "Please provide documentation for the following code.",
+  SwaggerApiDocs = "Please provide documentation for the following API using Swagger.",
+  SwaggerJsDocs = "Please write JSDoc for the following API using Swagger.",
+  -- Text related prompts
+  Summarize = "Please summarize the following text.",
+  Spelling = "Please correct any grammar and spelling errors in the following text.",
+  Wording = "Please improve the grammar and wording of the following text.",
+  Concise = "Please rewrite the following text to make it more concise.",
+}
+
 return {
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    optional = false,
+    opts = {
+      file_types = { "markdown", "copilot-chat" },
+    },
+    ft = { "markdown", "copilot-chat" },
+  },
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "main",
     dependencies = {
       { "github/copilot.vim" }, -- or github/copilot.vim
-      -- { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+      { "nvim-telescope/telescope.nvim" }, -- Use telescope for help actions
     },
     build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
@@ -21,79 +49,134 @@ return {
         layout = "vertical",
         relative = "editor",
       },
-      prompts = {
-        MonoCommitStaged = {
-          prompt = "Write commit message for the change with commitizen convention for monorepo. Make sure the title has maximum 50 characters and message is wrapped at 72 characters. Wrap the whole message in code block with language gitcommit.",
-          context = "git:staged",
-          selection = function(source)
-            return require("CopilotChat.select").gitdiff(source)
-          end,
-        },
-        FixDiagnostics = {
-          prompt = "Fix the following diagnostic issues in the code. Provide detailed explanations for each fix.",
-          context = "buffer",
-          system_prompt = "COPILOT_REVIEW",
-          selection = function(source)
-            return require("CopilotChat.select").line(source).diagnostics
-          end,
-        },
-        Rename = {
-          prompt = "Please rename the fallowing variable correctly base on selected context",
-          selection = function(source)
-            local select = require("CopilotChat.select")
-            return select.visual(source)
-          end,
-        },
-      },
+
+      prompts = prompts,
+      -- Uses visual selection or falls back to buffer
+      selection = function(source)
+        local select = require("CopilotChat.select")
+        return select.visual(source) or select.buffer(source)
+      end,
     },
+    config = function(_, opts)
+      local chat = require("CopilotChat")
+      chat.setup(opts)
+
+      local select = require("CopilotChat.select")
+
+      vim.api.nvim_create_user_command("CopilotChatVisual", function(args)
+        chat.ask(args.args, { selection = select.visual })
+      end, { nargs = "*", range = true })
+
+      -- Inline chat with Copilot
+      vim.api.nvim_create_user_command("CopilotChatInline", function(args)
+        chat.ask(args.args, {
+          selection = select.visual,
+          window = {
+            layout = "float",
+            relative = "cursor",
+            width = 1,
+            height = 0.4,
+            row = 1,
+            border = "rounded",
+            title = "CopilotChat",
+            zindex = 100,
+          },
+        })
+      end, { nargs = "*", range = true })
+
+      -- Restore CopilotChatBuffer
+      vim.api.nvim_create_user_command("CopilotChatBuffer", function(args)
+        chat.ask(args.args, { selection = select.buffer })
+      end, { nargs = "*", range = true })
+
+      -- Custom buffer for CopilotChat
+      vim.api.nvim_create_autocmd("BufEnter", {
+        pattern = "copilot-*",
+        callback = function()
+          vim.opt_local.relativenumber = true
+          vim.opt_local.number = true
+
+          -- Get current filetype and set it to markdown if the current filetype is copilot-chat
+          local ft = vim.bo.filetype
+          if ft == "copilot-chat" then
+            vim.bo.filetype = "markdown"
+          end
+        end,
+      })
+    end,
+    event = "VeryLazy",
     keys = {
       -- Show prompts actions with telescope
       {
         mode = "n",
         "<leader>ap",
         function()
-          require("CopilotChat").select_prompt()
+          require("CopilotChat").select_prompt({
+            context = { "buffers" },
+          })
         end,
         desc = "CopilotChat - Prompt actions",
       },
-
-      --  Show prompts actions that explain
-      { mode = "n", "<leader>cce", ":CopilotChatExplain<CR>", desc = "CopilotChat - Explain" },
-
-      { mode = "n", "<leader>ccf", ":CopilotChatFix<CR>", desc = "CopilotChat - Fix" },
-
-      { mode = "n", "<leader>cco", ":CopilotChatOptimize<CR>", desc = "CopilotChat - Optimize" },
+      {
+        "<leader>ap",
+        function()
+          require("CopilotChat").select_prompt()
+        end,
+        mode = "x",
+        desc = "CopilotChat - Prompt actions",
+      },
+      -- Code related commands
+      { "<leader>ae", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain code" },
+      { "<leader>aT", "<cmd>CopilotChatTests<cr>", desc = "CopilotChat - Generate tests" },
+      { "<leader>ar", "<cmd>CopilotChatReview<cr>", desc = "CopilotChat - Review code" },
+      { "<leader>aR", "<cmd>CopilotChatRefactor<cr>", desc = "CopilotChat - Refactor code" },
+      { "<leader>arv", "<cmd>CopilotChatBetterNamings<cr>", desc = "CopilotChat - Better Naming" },
+      { mode = "n", "<leader>af", ":CopilotChatFix<CR>", desc = "CopilotChat - Fix" },
+      { mode = "n", "<leader>ao", ":CopilotChatOptimize<CR>", desc = "CopilotChat - Optimize" },
+      -- Fix the issue with diagnostic
+      { "<leader>aF", "<cmd>CopilotChatFixError<cr>", desc = "CopilotChat - Fix Diagnostic" },
+      -- Clear buffer and chat history
+      { "<leader>al", "<cmd>CopilotChatReset<cr>", desc = "CopilotChat - Clear buffer and chat history" },
+      -- Toggle Copilot Chat Vsplit
+      { "<leader>cT", "<cmd>CopilotChatToggle<cr>", desc = "CopilotChat - Toggle" },
+      -- Copilot Chat Models
+      { "<leader>a?", "<cmd>CopilotChatModels<cr>", desc = "CopilotChat - Select Models" },
+      -- Copilot Chat Agents
+      { "<leader>aa", "<cmd>CopilotChatAgents<cr>", desc = "CopilotChat - Select Agents" },
+      -- Chat with Copilot in visual mode
+      {
+        "<leader>av",
+        ":CopilotChatVisual",
+        mode = "x",
+        desc = "CopilotChat - Open in vertical split",
+      },
+      {
+        "<leader>aI",
+        ":CopilotChatInline",
+        mode = "x",
+        desc = "CopilotChat - Inline chat",
+      },
+      -- Custom input for CopilotChat
+      {
+        "<leader>ai",
+        function()
+          local input = vim.fn.input("Ask Copilot: ")
+          if input ~= "" then
+            vim.cmd("CopilotChat " .. input)
+          end
+        end,
+        desc = "CopilotChat - Ask input",
+      },
 
       -- Generate commit message based on the git diff
       {
-        "<leader>cca",
-        ":CopilotChatCommit<CR>",
+        "<leader>am",
+        "<cmd>CopilotChatCommit<cr>",
         desc = "CopilotChat - Generate commit message for all changes",
       },
-      -- Generate commit message based on the git diff
-      {
-        "<leader>ccm",
-        ":CopilotChatMonoCommitStaged<CR>",
-        desc = "CopilotChat - Generate commit message for staged changes in monorepo",
-      },
-      -- Rename Variable
-      {
-        mode = "v",
-        "<leader>crv",
-        ":CopilotChatRename<CR>",
-        desc = "CopilotChat - rename variables for the selected context",
-      },
-      -- Fix diagnostic
       {
         mode = "n",
-        "<leader>cfd",
-        ":CopilotChatFixDiagnostics<CR>",
-        desc = "CopilotChat - rename variables for the selected context",
-      },
-
-      {
-        mode = "n",
-        "<leader>cq",
+        "<leader>aq",
         function()
           local input = vim.fn.input("Quick Chat: ")
           if input ~= "" then
@@ -105,14 +188,8 @@ return {
       {
         mode = "n",
         "<leader>ac",
-        ":CopilotChat<CR>",
-        desc = "CopilotChat - Chat",
-      },
-      {
-        mode = "v",
-        "<leader>ac",
-        ":CopilotChat<CR>",
-        desc = "CopilotChat - Chat",
+        ": CopilotChat<CR>",
+        desc = "Copilot Chat",
       },
     },
   },

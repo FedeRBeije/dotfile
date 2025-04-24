@@ -55,5 +55,5 @@ local function toggle_copilot()
   end
 end
 
-vim.g.copilot_enabled = false
-keymap.set("n", "<leader>ct", toggle_copilot, { desc = "Toggle Copilot" })
+vim.g.copilot_enabled = true
+keymap.set("n", "<leader>ct", toggle_copilot, { desc = "Enable Copilot" })

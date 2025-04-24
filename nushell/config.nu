@@ -938,10 +938,7 @@ def gitD [] {
 }
 
 
-use ~/.cache/starship/init.nu
 
-source ~/.zoxide.nu
-source ~/.cache/carapace/init.nu
 
 # Sistem
 alias la = ls -a
@@ -950,15 +947,14 @@ alias ll = ls -l
 # Git 
 alias gf = git fetch
 
-# Zoxide
-alias cd = z
-
 # Python
 alias pip = pip3
 
 # Neovim
 alias v = vim
 alias vim = nvim
+
+alias to_zsh = ^zsh
 
 
 load-env (fnm env --shell bash
@@ -978,3 +974,11 @@ $env.PATH = ($env.PATH
 
 
 $env.PATH = ($env.PATH | prepend "/opt/homebrew/bin")
+
+$env.__zoxide_hooked = true
+
+source ~/.config/nushell//env.nu
+source ~/.zoxide.nu
+source ~/.cache/carapace/init.nu
+
+use ~/.cache/starship/init.nu
