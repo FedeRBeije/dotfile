@@ -7773,3 +7773,324 @@ clear
 cd nushell
 clewar
 clear
+vim
+clear
+nvim
+clear
+clear
+cd myclienteling-app-components
+clear
+clear
+docker compose up -d
+cd cheshire-cat-ai
+python -m venv venv
+source venv/binactivate.nu
+source venv/bin/activate.nu
+gh copilot -h
+gh copilot explain "Error: nu::parser::sourced_file_not_found<\n><\n>  × File not found<\n>   ╭─[entry #4:1:8]<\n> 1 │ source venv/bin/activate.nu<\n>   ·        ──────────┬─────────<\n>   ·                  ╰── File not found: venv/bin/activate.nu<\n>   ╰────<\n>  help: sourced files need to be available before your script is run<\n>"
+source cheshire/bin/activate.nu
+pip install cat
+docker compose logs -f
+clear
+pip install requests pydantic
+vim
+clear
+source cheshire/bin/activate.nu
+vim
+clear
+nvim
+clear
+gf
+git pull origin develop
+vim
+clear
+cd retail
+nvim
+vim
+clear
+npm i
+clear
+vim
+clear
+vim
+npx expo-doctor@latest
+ivm
+vim
+npm i
+clear
+vim
+npm run build
+npm run start
+npm run dev
+vim
+clear
+gitc
+git pull
+gf
+vim
+npm i
+vim
+npm i
+clear
+npm run start
+npm run dev
+clear
+npm run dev
+npm run update
+npm run build
+cd packages/ui
+npm run dev
+vim
+npm run dev
+npm run build
+clear
+npm run dev
+npm run build
+cd packages/cli
+vim
+npm run build
+clear
+vim
+npm run build
+npm run build
+vim
+vim
+clear
+npm run build
+vim
+npm run build
+clear
+vi
+cd myclienteling-app-mobile
+npm i
+nvim
+clear
+npm runb build
+npm run build
+clear
+npm run dev
+npm run dev
+npm i
+npm run dev
+npm run build_wave
+npm run dev
+npm run build_wave
+clear
+npm run build_wave
+clear
+vim
+clear
+cd retail
+gf
+git pull
+clear
+cd nvim
+vim
+clear
+vim chat-boutique
+cd chat-boutique
+vim
+cd retail
+clear
+npm run dev
+cd
+cd .ssh
+vim
+cd beije
+ls
+git clone git@github.com:EngineeringRetailPlatform-Champion/myclienteling-app-mobile.git
+git clone git@github.com-eng:EngineeringRetailPlatform-Champion/myclienteling-app-mobile.git
+ls
+rm -rf myclienteling-app-mobile
+git config user.email
+clear
+cd .ssh
+vim
+clear
+vim
+git clone git@github.com:EngineeringRetailPlatform-Champion/myclienteling-app-mobile.git
+clear
+vim
+clear
+vim
+npm run build
+cd lib
+npm publish
+cd ..
+clear
+npm i
+vim
+npm run build
+cd lib
+npm publish
+cd ..
+npm run dev
+clear
+vim
+npm run dev
+npm run start
+vim
+cd .config
+npm run dev
+clear
+npm run update
+vim
+vim
+npm run update
+cleqr
+clear
+npm run dev
+vim
+npm run build
+cd lib
+npm publish
+cd ..
+npm i
+clear
+vim
+cd nvim
+vim
+cd .config
+vim
+mkdir mcphub
+touch servers.json
+touch mcphub/servers.json
+rm servers.json
+vim
+npm install -g mcp-hub@latest
+vim
+clear
+vim
+vim mcphub
+vim
+clear
+vim
+tmux attach -t work
+clear
+clear
+gf
+git pull
+cd packages/ui
+npm run dev
+vim
+clear
+vim
+gf
+nvim
+vim
+brew update neovim
+which neovim
+which nvim
+nvim -v
+brew update nvim
+clear
+vim
+clear
+cd retail
+vim
+vim
+clear
+git log
+clear
+git status
+git add .
+vim
+git commit -m "refactor(product): remove unused variant param<\n><\n>Remove the unused variant parameter from the useLocalSearchParams hook in<\n>the Product component, keeping only the necessary id parameter."
+git push
+clear
+git checkout -b feature/expo-53
+clear
+npx expo-doctor@latest
+npm i -g eas-cli
+npx expo install expo@^53.0.0 --fix
+vim
+npm install @types/react@^19 --workspace=my-clienteling<\n>
+vim
+npm install @types/react@^19 --workspace=my-clienteling --force
+npx expo install expo@^53.0.0 --fix
+npx expo-doctor@latest
+npx expo-doctor@latest --fix
+npx expo install expo@^53.0.0 --fix
+npx expo-doctor@latest
+cd presenter
+npx expo install expo@^53.0.0 --fix
+npx expo install expo@^53.0.0 --fix --force
+npx expo install expo@^53.0.0 --fix -- --force
+npx expo-doctor@latest
+vim
+npm i
+vim
+cd packages/ui
+npx
+clear
+npx expo install expo@^53.0.0 --fix -- --force
+cd retail
+vim
+npm i
+npx expo-doctor@latest
+npx expo-doctor@latest
+npm i -g eas-cli
+npm install -g eas-cli --force<\n>
+rm -rf ~/.local/share/fnm/node-versions/v20.17.0/installation/lib/node_modules/eas-cli<\n>npm install -g eas-cli<\n>
+npx expo-doctor@latest
+npm why expo-modules-autolinking<\n>
+vim
+npm i
+npx turbo run clean
+vim
+clear
+npm i
+vim
+clear
+vim
+npm i
+vim
+npm i
+vim
+npm i
+vi
+vim
+npm i
+vim
+npm i
+vim
+npm i
+vim
+npm i
+vim
+npm i
+npx expo-doctor@latest
+npm why metro
+npx turbo run clean
+vim
+npm i
+brew upgrade neovim
+brew upgrade nvim
+cd .config
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini
+nvim -v
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini
+nvim
+brew tap homebrew/bundle
+darwin-rebuild switch --flake ~/.config/nix#mini
+man brew
+brew -v
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini
+nvim -v
+nvim
+brew -v
+brew install neovim
+nvim -v
+nvim
+clear
+nvim
+darwin-rebuild switch --flake ~/.config/nix#mini
+clear
+nvim -v
+cleara
+clear

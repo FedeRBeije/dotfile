@@ -56,7 +56,6 @@
           "nushell"
           "pnpm"
           "starship" 
-          "thefuck" 
           "zoxide"
         ];
         casks = [
@@ -68,7 +67,7 @@
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
         onActivation.upgrade = true;
-      };
+      }; 
 
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "Meslo"  ]; })  
