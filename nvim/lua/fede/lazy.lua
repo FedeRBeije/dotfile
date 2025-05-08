@@ -11,6 +11,20 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- CUSTOM MACRO --
+local esc = vim.api.nvim_replace_termcodes("<Esc>", true, true, true)
+
+vim.api.nvim_create_augroup("JSLogMacro", { clear = true })
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = "JSLogMacro",
+  pattern = { "javascript", "typescript" },
+  callback = function()
+    vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa'," .. esc .. "pa)")
+  end,
+})
+---
+
 require("lazy").setup({
   {
     "epwalsh/obsidian.nvim",

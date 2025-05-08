@@ -8094,3 +8094,163 @@ clear
 nvim -v
 cleara
 clear
+nvim
+clear
+vim
+npm i
+npm i --force
+cd clienteling
+npm run build
+cd retail
+npx turbo run dev --filter=my-clienteling
+cd clienteling
+npm run build
+clear
+nvim
+gitc
+nvim
+vim
+vi
+vim
+npm run build_wave
+pip install --user pipx
+brew install pipx<\n>
+pipx ensurepath<\n>
+vim
+clear
+vim
+cd retail
+clear
+npm i
+nvim
+clear
+gitc
+cd clienteling
+nvim
+vim
+clear
+vim
+clear
+nvim
+gitc
+vim
+gitc
+clear\
+clear
+npm run dev
+clear
+gf
+nvim
+nvim
+pipx install vectorcode
+pipx ensurepath<\n>
+clear
+nvim
+vim
+vim
+clear
+gf
+cd retail
+vim
+nvim
+git fetch
+git checkout feature/472-dynamic-form-planning
+clear
+npm i
+npm run dev
+gitc
+vim
+gitc
+nvim
+vim
+gitc
+vim
+nvim
+gitc
+vim
+gitc
+vim
+gitc
+nvim
+gitc
+vim
+clear
+nvim
+clear
+nvim
+vim
+nvim
+vim
+vim
+clear
+vim
+gf
+clear
+cd nvim
+vim
+vim
+gitc
+gf
+git pull
+nvim
+tmux detach
+tmux
+vim
+nvim
+vim
+clear
+nvim
+cd myclienteling-app-mobile
+npm run dev
+npm run dev
+cd myclienteling-app-mobile
+cd myclienteling-app-services
+vim
+nvim
+vim
+clear
+clear
+clear
+npm run dev
+<\n>
+npm run dev
+npm run build_wave
+gf
+git push
+git pull
+clear
+gf
+git pull
+nvim
+vim
+cd packages/ui
+vim
+nvim
+gtic
+gitc
+git pull origin develop
+clear
+nvim
+clear
+npm run update
+cd retail
+npm run dev
+npm run update
+npm i
+gf
+git pul
+git pull
+npm run dev
+npm run update
+clear
+nvim
+gf
+git pull
+git pull origin develop
+git push
+clear
+vim
+nvim
+vim
+nvim
+vim

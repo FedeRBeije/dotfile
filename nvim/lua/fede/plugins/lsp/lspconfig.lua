@@ -7,9 +7,6 @@ return {
     { "folke/neodev.nvim", opts = {} },
   },
   config = function()
-    -- import lspconfig plugin
-    local lspconfig = require("lspconfig")
-
     -- import mason_lspconfig plugin
     local mason_lspconfig = require("mason-lspconfig")
 
@@ -18,8 +15,11 @@ return {
 
     local keymap = vim.keymap -- for conciseness
 
+    -- Create an autocommand group for LSP configuration
+    local augroup = vim.api.nvim_create_augroup("UserLspConfig", {})
+
     vim.api.nvim_create_autocmd("LspAttach", {
-      group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+      group = augroup,
       callback = function(ev)
         -- Buffer local mappings.
         -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -70,84 +70,120 @@ return {
     -- used to enable autocompletion (assign to every lsp server config)
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
+    -- NOTE: DEPRECATED
     -- Change the Diagnostic symbols in the sign column (gutter)
-    local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-    for type, icon in pairs(signs) do
-      local hl = "DiagnosticSign" .. type
-      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-    end
+    -- local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+    -- for type, icon in pairs(signs) do
+    --   local hl = "DiagnosticSign" .. type
+    --   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+    -- end
 
-    mason_lspconfig.setup_handlers({
-      -- default handler for installed servers
-      function(server_name)
-        lspconfig[server_name].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ["rust_analyzer"] = function()
-        lspconfig["rust_analyzer"].setup({
-          capabilities = capabilities,
-          filetypes = { "rs" },
-          on_attach = function(client)
-            -- enable inlay hints
-            client.server_capabilities.inlayHintProvider = { chainingHints = true, typeHints = true }
-            -- enable on save formatting
-            vim.api.nvim_command("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
-          end,
-          cmd = {
-            "rustup",
-            "run",
-            "stable",
-            "rust-analyzer",
-          },
-        })
-      end,
-      ["svelte"] = function()
-        -- configure svelte server
-        lspconfig["svelte"].setup({
-          capabilities = capabilities,
-          on_attach = function(client, bufnr)
-            vim.api.nvim_create_autocmd("BufWritePost", {
-              pattern = { "*.js", "*.ts" },
-              callback = function(ctx)
-                -- Here use ctx.match instead of ctx.file
-                client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
-              end,
-            })
+    -- Configure language servers
+    -- Using vim.lsp.config for Neovim 0.11+
+    vim.lsp.config("rust_analyzer", {
+      capabilities = capabilities,
+      filetypes = { "rust" },
+      on_attach = function(client, _)
+        -- enable inlay hints
+        client.server_capabilities.inlayHintProvider = { chainingHints = true, typeHints = true }
+        -- enable on save formatting (using newer format method)
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          buffer = 0,
+          callback = function()
+            vim.lsp.buf.format({ async = false })
           end,
         })
       end,
-      ["graphql"] = function()
-        -- configure graphql language server
-        lspconfig["graphql"].setup({
-          capabilities = capabilities,
-          filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
-        })
-      end,
-      ["emmet_ls"] = function()
-        -- configure emmet language server
-        lspconfig["emmet_ls"].setup({
-          capabilities = capabilities,
-          filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-        })
-      end,
-      ["lua_ls"] = function()
-        -- configure lua server (with special settings)
-        lspconfig["lua_ls"].setup({
-          capabilities = capabilities,
-          settings = {
-            Lua = {
-              -- make the language server recognize "vim" global
-              diagnostics = {
-                globals = { "vim" },
-              },
-              completion = {
-                callSnippet = "Replace",
-              },
-            },
-          },
+      cmd = {
+        "rustup",
+        "run",
+        "stable",
+        "rust-analyzer",
+      },
+    })
+
+    vim.lsp.config("svelte", {
+      capabilities = capabilities,
+      on_attach = function(client, _)
+        vim.api.nvim_create_autocmd("BufWritePost", {
+          pattern = { "*.js", "*.ts" },
+          callback = function(ctx)
+            -- Here use ctx.match instead of ctx.file
+            client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
+          end,
         })
       end,
     })
+
+    vim.lsp.config("graphql", {
+      capabilities = capabilities,
+      filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+    })
+
+    vim.lsp.config("emmet_ls", {
+      capabilities = capabilities,
+      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+    })
+
+    vim.lsp.config("lua_ls", {
+      capabilities = capabilities,
+      settings = {
+        Lua = {
+          -- make the language server recognize "vim" global
+          diagnostics = {
+            globals = { "vim" },
+          },
+          completion = {
+            callSnippet = "Replace",
+          },
+        },
+      },
+    })
+
+    -- For servers that don't need special configuration, set up directly using vim.lsp.config
+    -- Get the list of installed servers from mason-lspconfig
+    local installed_servers = mason_lspconfig.get_installed_servers()
+    -- Configure diagnostic signs properly (using new API)
+    -- Configure diagnostic symbols and display
+    vim.diagnostic.config({
+      virtual_text = true,
+      signs = {
+        text = {
+          [vim.diagnostic.severity.ERROR] = " ",
+          [vim.diagnostic.severity.WARN] = " ",
+          [vim.diagnostic.severity.HINT] = "󰠠 ",
+          [vim.diagnostic.severity.INFO] = " ",
+        },
+        numhl = {},
+        texthl = {
+          [vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
+          [vim.diagnostic.severity.WARN] = "DiagnosticSignWarn",
+          [vim.diagnostic.severity.HINT] = "DiagnosticSignHint",
+          [vim.diagnostic.severity.INFO] = "DiagnosticSignInfo",
+        },
+      },
+      underline = true,
+      update_in_insert = false,
+      severity_sort = true,
+      float = {
+        border = "rounded",
+        source = "always",
+      },
+    })
+    -- Configure each installed server that doesn't have special configuration
+    for _, server_name in ipairs(installed_servers) do
+      -- Skip servers already configured above
+      if
+        server_name ~= "rust_analyzer"
+        and server_name ~= "svelte"
+        and server_name ~= "graphql"
+        and server_name ~= "emmet_ls"
+        and server_name ~= "lua_ls"
+      then
+        vim.lsp.config(server_name, {
+          capabilities = capabilities,
+        })
+      end
+    end
   end,
 }
