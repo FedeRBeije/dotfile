@@ -8254,3 +8254,181 @@ nvim
 vim
 nvim
 vim
+clear
+nvim
+clear
+clear
+nvim
+gf
+clear
+vim
+gf
+nvim
+gf
+git pull origin develop
+nvim
+git pull origin develop
+nvim
+vim
+nvi
+nvim
+vim
+gf
+git pull
+cloude code update
+claude update
+clear
+nvim
+clear
+gf
+git pull
+git pull origin feature/479-android-bugs
+git push
+clear
+gf
+git pull
+clear
+gitc
+git pull
+clear
+nvim
+clear
+git merge feature/472-dynamic-form-planning
+git push
+gitc
+clear
+clear
+npm run build
+nvim
+npm run build
+cd lib
+npm publish
+cd ..
+npm run dev
+tmux attach -t work
+gf
+clear
+clear
+nvim
+npm run build
+cd lib
+npm publish
+nvim
+gf
+git pull origin feature/481-product-search
+clear
+nvim
+npm i
+clear
+nvim
+cd ..
+cd ebsn
+npm run test:l-r
+npm run build
+cd lib
+npm publish
+nvim
+gf
+git checkout feature/485-custom-route
+git pull origin feature/483-category-tree
+nvim
+gitc
+git pull origin feature/485-custom-route
+clear
+git push
+clear
+npm run dev
+npm run update
+nvim
+clear
+git checkout feature/482-address-infos
+nvim
+gitc
+gf
+git pull
+git pull origin feature/487-warehouse-post-login
+git push
+npm run dev
+npm run update
+clear
+npm run update
+nvim
+gitc
+npm run build
+cd lib
+npm publish
+cd ..
+nvim
+gitc
+gf
+git pull
+clear
+git checkout feature/488-email-form-modal
+gf
+git checkout feature/488-email-form-modal
+gitc
+git pull origin feature/488-email-form-modal
+clear
+git push
+npm run dev
+npm i
+npm run update
+nvim
+gitc
+nvim
+npm run dev
+nvim
+gitc
+clear
+gf
+gitc
+git merge feature/482-address-infos
+git push
+clear
+npm run update
+nvim
+npm run update
+nvim
+clear
+gitc
+gf
+git checkout feature/android-modal-exceed-screen
+gf
+git pull origin develop
+clear
+npm run dev
+clear
+gitc
+git merge feature/android-modal-exceed-screen
+git push
+npm run update
+clear
+nvim
+clear
+npm run dev
+nvim
+npm run update
+gf
+nvim
+nvi
+vim
+clear
+nvim
+gf
+git pull
+gf
+git pull
+gf
+nvim
+gf
+git pull
+clear
+nvim
+gf
+clear
+npm run update
+npm run dev
+clear
+nvim
+vim
+nvim

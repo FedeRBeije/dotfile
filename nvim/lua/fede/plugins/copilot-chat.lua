@@ -15,6 +15,11 @@ local prompts = {
   Spelling = "Please correct any grammar and spelling errors in the following text.",
   Wording = "Please improve the grammar and wording of the following text.",
   Concise = "Please rewrite the following text to make it more concise.",
+  Commit = {
+    prompt = "Write commit message for the change with commitizen convention. Keep the title under 50 characters and wrap message at 72 characters. Format as a gitcommit code block.",
+    context = "git:staged",
+    model = "o3-mini",
+  },
 }
 
 return {

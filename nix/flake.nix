@@ -43,8 +43,8 @@
         ];
 
 # Services that are enabled by default and works on the background.
-      services.skhd.enable = true;
-      services.sketchybar.enable = true;
+      services.skhd.enable = false;
+      services.sketchybar.enable = false;
 
       homebrew = {
         enable = true;
