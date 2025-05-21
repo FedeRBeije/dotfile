@@ -8432,3 +8432,225 @@ clear
 nvim
 vim
 nvim
+python3 -m venv venv && source venv/bin/activate && pip install fastapi uvicorn pydantic
+ng new frontend --routing --style=css --skip-git --skip-install
+python3 -m venv venv && source venv/bin/activate and pip install fastapi uvicorn pydantic
+python3 -m venv venv and source venv/bin/activate and pip install fastapi uvicorn pydantic
+python3 -m venv venv; source venv/bin/activate; pip install fastapi uvicorn pydantic
+pip install fastapi uvicorn pydantic
+npm install -g @angular/cli
+cd /Users/federicoreghini/Documents/beije/test_ai
+ng new frontend --routing --style=css --skip-git
+cd frontend
+npm install
+cd backend
+pip install filelock
+python3 -m venv venv<\n>source venv/bin/activate<\n>pip install fastapi uvicorn pydantic filelock
+venv/bin/pip install fastapi uvicorn pydantic filelock
+ng test --watch=false --browsers=ChromeHeadless
+exit
+exit
+ng test --watch=false --browsers=ChromeHeadless
+ng add @angular/material --defaults
+ng test --watch=false --browsers=ChromeHeadless
+npm run start
+npm start
+npm install @angular/animations
+cd /Users/federicoreghini/Documents/beije/test_ai/backend
+venv/bin/uvicorn main:app --reload
+cd /Users/federicoreghini/Documents/beije/test_ai/frontend
+curl http://localhost:8000/users
+curl http://localhost:8000/permissions
+npm start
+cd /Users/federicoreghini/Documents/beije/test_ai/backend
+venv/bin/pip install websockets
+venv/bin/uvicorn main:app --reload
+venv/bin/uvicorn main:app --reload
+lsof -i :8000 | grep LISTEN | awk '{print $2}' | xargs kill -9
+cd /Users/federicoreghini/Documents/beije/test_ai/frontend
+curl http://localhost:8000/users
+ng serve
+curl http://localhost:8000/users
+curl http://localhost:8000/users/4
+curl http://localhost:8000/auth/me/4
+curl http://localhost:8000/permissions
+cd /Users/federicoreghini/Documents/beije/test_ai/frontend && ng serve
+ng serve
+curl http://localhost:8000/auth/me/4
+venv/bin/uvicorn main:app --reload
+npm start
+clear
+clear
+gf
+git pull
+nvim
+clear
+nvim
+clear
+nvim
+gf
+git pull
+clear
+nvim
+clear
+nvim
+gitc
+cd packages/ui
+nvim
+gitc
+vim
+gf
+git pull
+npm run dev
+npm run update
+npm run dev
+nvim
+gf
+nvim
+nvim
+clear
+npm run update
+clear
+npm run dev
+npm run update
+clear
+git checkoute -b refactor/product-search-to-infinite-query
+git checkout -b refactor/product-search-to-infinite-query
+git add .
+cd retail
+npx lint-staged
+git push
+clear
+nvim
+clear
+gf
+clear
+gf
+git checkout feature/488-email-form-modal
+git pull
+clear
+git merge feature/product-search-to-infinite-query
+git merge refactor/product-search-to-infinite-query
+gitc
+git pull origin feature/488-email-form-modal
+nvim
+clear
+gitc
+git pull origin feature/488-email-form-modal
+clera
+clear
+nvim
+nvim
+clear
+nvim
+tmux attach -t work
+npm run dev
+tmux attach -t work
+gitc
+gf
+git pull
+clear
+clear
+gf
+gitc
+git pull
+clear
+gf
+git pull
+git log
+clear
+gitc
+git merge refactor/product-search-to-infinite-query
+git push
+clear
+clear
+nvim
+cd myclienteling-app-moblie
+cd myclienteling-app-mobile
+npm run test
+clear
+nvim
+clear
+npm run test
+clear
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini
+clear
+clear
+nvim
+gf
+git pull
+clear
+git push
+clear
+npm run dev
+clear
+clear
+npm run dev
+npm run update
+clear
+clear
+nvim
+nvim
+clear
+npm run dev
+nvim
+clear
+cd ..
+npm run build
+cd lib
+npm publish
+npm i
+npx lint-staged
+nvim
+gf
+clear
+gf
+clear
+cloude code update
+cloude -v
+npm install -g @anthropic-ai/claude-code<\n>
+claude -v
+npm install -g @anthropic-ai/claude-code<\n>
+npm cache clean --force<\n>
+npm install -g @anthropic-ai/claude-code<\n>
+rm -rf /Users/federicoreghini/.local/share/fnm/node-versions/v20.17.0/installation/lib/node_modules/@anthropic-ai/claude-code<\n>
+npm install -g @anthropic-ai/claude-code<\n>
+claude -v
+claude 
+claud whoami
+claude whoami
+claude mcp
+claude
+clear
+nvim
+clear
+nvim
+clear
+nvm
+cd ..
+npm run build
+cd lib
+npm publish
+cd ..
+npm i
+gf
+cd ..
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini
+cd nix
+ls
+claude
+cd nix
+darwin-rebuild switch --flake ~/.config/nix#mini
+nvim
+claude doctor
+darwin-rebuild switch --flake ~/.config/nix#mini
+clear
+darwin-rebuild switch --flake ~/.config/nix#mini
+clear
+claude
+clear
+nviim
+darwin-rebuild switch --flake ~/.config/nix#mini
+clear

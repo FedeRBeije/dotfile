@@ -18,7 +18,7 @@ local prompts = {
   Commit = {
     prompt = "Write commit message for the change with commitizen convention. Keep the title under 50 characters and wrap message at 72 characters. Format as a gitcommit code block.",
     context = "git:staged",
-    model = "o3-mini",
+    model = "gpt-4o-mini",
   },
 }
 
@@ -170,6 +170,18 @@ return {
       "<cmd>CopilotChatCommit<cr>",
       desc = "CopilotChat - Generate commit message for all changes",
     },
+    {
+      "<leader>aM",
+      function()
+        local chat = require("CopilotChat")
+        local response = chat.ask("", prompts.Commit)
+        if response then
+          vim.api.nvim_put(vim.split(response, "\n"), "l", true, true)
+        end
+      end,
+      desc = "CopilotChat - Generate commit message for all changes",
+    },
+
     {
       mode = "n",
       "<leader>aq",
