@@ -39,6 +39,7 @@ return {
         "pyright",
         "jsonls",
         "yamlls",
+        "python",
       },
     })
 
@@ -51,7 +52,6 @@ return {
         "debugpy",
         "flake8",
         "mypy",
-        "pylint",
         "eslint_d",
       },
     })

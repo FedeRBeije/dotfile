@@ -8654,3 +8654,63 @@ clear
 nviim
 darwin-rebuild switch --flake ~/.config/nix#mini
 clear
+nvim
+cd .config/nushell
+nvim
+fnm -v
+fnm ls
+clear
+nvim
+clear
+nvim
+clear
+clear
+clear
+activate_venv -n cheshire
+activate_venv 
+venv/bin/uvicorn main:app --reload
+activate_venv
+activate_venv --name cheshire
+activate_venv -h
+activate_venv cheshire
+activate-venv -n cheshire
+source cheshire/bin/activate.nu
+clear
+nvim
+clear
+source cheshire/bin/activate.nu
+/usr/bin/python3 /Users/federicoreghini/.windsurf/extensions/ms-python.python-2025.4.0-universal/python_files/printEnvVariablesToFile.py /Users/federicoreghini/.windsurf/extensions/ms-python.python-2025.4.0-universal/python_files/deactivate/zsh/envVars.txt
+nvim
+clear
+claude
+clear
+cd cheshire-cat-ai
+source ~/.config/nushell/config.nu
+clear
+source ~/.config/nushell/config.nu
+cd
+cd .config/nushell
+nvim
+source ~/.config/nushell/config.nu
+source cheshire/bin/activate.nu
+source ~/.config/nushell/config.nu
+nvim
+source ~/.config/nushell/config.nu
+clear
+cd cheshire-cat-ai
+ls
+cd ..
+ls
+cd be-ai-fashion-agent
+mkdir be-ai-fashion-agent
+cd be-ai-fashion-agent<\n>
+/usr/bin/python3 /Users/federicoreghini/.windsurf/extensions/ms-python.python-2025.4.0-universal/python_files/printEnvVariablesToFile.py /Users/federicoreghini/.windsurf/extensions/ms-python.python-2025.4.0-universal/python_files/deactivate/zsh/envVars.txt
+mkdir -p app/models app/controllers app/middleware app/routes app/utils app/config docs
+mkdir app
+mkdir app/models
+mkdir app/controllers app/middleware app/routes app/utils app/config docs
+clear
+nvim
+clear
+cd nvim
+ls

@@ -295,7 +295,20 @@ $env.config = {
         pre_prompt: [{ null }] # run before the prompt is shown
         pre_execution: [{ null }] # run before the repl input is run
         env_change: {
-            PWD: [{|before, after| null }] # run if the PWD environment is different since the last repl input
+            PWD: [
+                {|before, after| 
+                    # Detect Python projects when changing directories
+                    let has_venv = ("venv" | path exists)
+                    let has_requirements = ("requirements.txt" | path exists)
+                    let has_setuppy = ("setup.py" | path exists)
+                    let has_pyproject = ("pyproject.toml" | path exists)
+                    
+                    if $has_venv and ($has_requirements or $has_setuppy or $has_pyproject) {
+                        echo "Python project detected with virtual environment."
+                        echo "Use 'activate-venv' to activate the virtual environment."
+                    }
+                }
+            ] # run if the PWD environment is different since the last repl input
         }
         display_output: "if (term size).columns >= 100 { table -e } else { table }" # run to display the output of a pipeline
         command_not_found: { null } # return an error message when a command is not found
@@ -903,12 +916,111 @@ def ff [] {
 }
 
 
-# Python
-def activate_venv [] {
-    let venv_path = (pwd | path join "venv")
-    $env.VIRTUAL_ENV = $venv_path  # Imposta la variabile prima di usarla
-    $env.PATH = ($venv_path | path join "bin" | prepend $env.PATH)
+# --- Python Environment Management ---
+
+# Create a Python virtual environment in the current directory
+def create-venv [
+    --python (-p) = "python3": string  # Python version to use
+    --name (-n) = "venv": string       # Name of the virtual environment
+] {
+    echo $"Creating virtual environment with ($python) named '($name)'..."
+    ^$python -m venv $name
+    echo $"Virtual environment created at (pwd | path join $name)"
+    echo "To activate, run 'activate-venv'"
 }
+
+# Activate a Python virtual environment
+def activate-venv [
+    --name (-n) = "venv": string  # Name of the virtual environment directory
+] {
+    let venv_path = (pwd | path join $name)
+    
+    if not ($venv_path | path exists) {
+        echo $"Error: Virtual environment at ($venv_path) not found."
+        echo "Run 'create-venv' first or specify a different name with --name"
+        return 1
+    }
+    
+    let bin_path = if (sys).host.name == "windows" {
+        $venv_path | path join "Scripts"
+    } else {
+        $venv_path | path join "bin"
+    }
+    
+    $env.VIRTUAL_ENV = $venv_path
+    $env.PATH = [$bin_path, ...$env.PATH]
+    $env.PYTHONPATH = (pwd | str trim)
+    
+    echo $"Activated Python environment: ($venv_path)"
+    echo $"Python version: (^python --version)"
+}
+
+# Deactivate current Python virtual environment
+def deactivate-venv [] {
+    if 'VIRTUAL_ENV' not-in ($env | columns) {
+        echo "No active virtual environment found."
+        return 0
+    }
+    
+    let venv_path = $env.VIRTUAL_ENV
+    let bin_path = if (sys).host.name == "windows" {
+        $venv_path | path join "Scripts"
+    } else {
+        $venv_path | path join "bin"
+    }
+    
+    # Remove the bin path from PATH
+    $env.PATH = ($env.PATH | where $it != $bin_path)
+    hide-env VIRTUAL_ENV
+    hide-env PYTHONPATH
+    
+    echo "Virtual environment deactivated"
+}
+
+# Run Python with the current directory in the Python path
+def pyrun [
+    script: string  # Python script to run
+    ...args         # Arguments to pass to the script
+] {
+    let current_dir = pwd
+    
+    if 'PYTHONPATH' in $env {
+        # Append to existing PYTHONPATH
+        $env.PYTHONPATH = ($env.PYTHONPATH | append $current_dir | str join (char esep))
+        ^python $script ...$args
+    } else {
+        # Set PYTHONPATH temporarily
+        PYTHONPATH=$current_dir ^python $script ...$args
+    }
+}
+
+# Install Python packages with pip
+def pipi [
+    ...packages: string  # Packages to install
+    --upgrade (-u)       # Upgrade existing packages
+    --dev (-d)           # Install as development dependencies
+] {
+    if ($packages | is-empty) {
+        echo "Usage: pipi [packages] [--upgrade] [--dev]"
+        return 1
+    }
+    
+    let cmd = if $upgrade { "pip install --upgrade" } else { "pip install" }
+    
+    if $dev {
+        ^pip install --editable ".[dev]"
+    } else {
+        ^$cmd ...$packages
+    }
+}
+
+# Python shortcuts/aliases
+alias py = python
+alias ipy = ipython
+alias pytest = python -m pytest
+alias black = python -m black
+alias flake8 = python -m flake8
+alias pip-upgrade = pip list --outdated --format=json | from json | each { |it| pip install --upgrade $it.name }
 
 
 
@@ -981,4 +1093,5 @@ source ~/.config/nushell//env.nu
 source ~/.zoxide.nu
 source ~/.cache/carapace/init.nu
 
+use ~/.cache/starship/init.nu
 use ~/.cache/starship/init.nu
