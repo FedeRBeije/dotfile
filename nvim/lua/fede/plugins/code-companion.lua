@@ -1,6 +1,5 @@
 return {
   "olimorris/codecompanion.nvim",
-  opts = {},
   dependencies = {
     "tpope/vim-sleuth", -- Automatically detects which indents should be used in the current buffer
     "nvim-lua/plenary.nvim",
@@ -22,6 +21,18 @@ return {
       end,
     },
     {
+      "HakonHarnes/img-clip.nvim",
+      opts = {
+        filetypes = {
+          codecompanion = {
+            prompt_for_file_name = false,
+            template = "[Image]($FILE_PATH)",
+            use_absolute_path = true,
+          },
+        },
+      },
+    },
+    {
       "Davidyz/VectorCode", -- Index and search code in your repositories
       version = "*",
       build = "pipx upgrade vectorcode",
@@ -29,63 +40,88 @@ return {
     },
     "j-hui/fidget.nvim",
   },
-  config = function()
-    require("codecompanion").setup({
-      extensions = {
-        mcphub = {
-          callback = "mcphub.extensions.codecompanion",
-          opts = {
-            make_vars = true,
-            make_slash_commands = true,
-            show_result_in_chat = true,
-          },
+  opts = {
+    extensions = {
+      mcphub = {
+        callback = "mcphub.extensions.codecompanion",
+        opts = {
+          make_vars = true,
+          make_slash_commands = true,
+          show_result_in_chat = true,
         },
       },
-      adapters = {
-        copilot = function()
-          return require("codecompanion.adapters").extend("copilot", {
-            schema = {
-              model = {
-                default = "claude-sonnet-4",
-                -- default = "gemini-2.5-pro",
-              },
+    },
+    adapters = {
+      copilot = function()
+        return require("codecompanion.adapters").extend("copilot", {
+          schema = {
+            model = {
+              default = "claude-sonnet-4",
+              -- default = "gemini-2.5-pro",
             },
-          })
-        end,
+          },
+        })
+      end,
+    },
+    strategies = {
+      chat = {
+        keymaps = {
+          send = {
+            modes = {
+              n = { "<CR>", "<C-s>" },
+              i = "<C-s>",
+            },
+            callback = function(chat)
+              vim.cmd("stopinsert")
+              chat:add_buf_message({ role = "llm", content = "" })
+              chat:submit()
+            end,
+            index = 1,
+            description = "Send",
+          },
+          close = {
+            modes = {
+              n = "q",
+              i = "<C-c>",
+            },
+            index = 4,
+            callback = "keymaps.close",
+            description = "Close Chat",
+          },
+          stop = {
+            modes = {
+              n = "<C-q>",
+            },
+            index = 5,
+            callback = "keymaps.stop",
+            description = "Stop Request",
+          },
+        },
+        roles = {
+          user = "🐳 Fede",
+        },
       },
-      strategies = {
-        chat = {
-          roles = {
-            user = "🐳 Fede",
+    },
+    prompt_library = {
+      ["Boilerplate REACT NATIVE"] = {
+        strategy = "inline",
+        description = "Generate some boilerplate React native code",
+        opts = {
+          mapping = "<LocalLeader>ch",
+        },
+        prompts = {
+          {
+            role = "system",
+            content = "You are an expert React native programmer",
+          },
+          {
+            role = "user",
+            content = "<user_prompt>Please generate some React native function boilerplate for me by the given file name. Return the code only and no markdown codeblocks</user_prompt>",
           },
         },
       },
-      keymaps = {
-        send = {
-          modes = {
-            n = { "<CR>", "<C-s>" },
-            i = "<C-s>",
-          },
-          callback = function(chat)
-            vim.cmd("stopinsert")
-            chat:add_buf_message({ role = "llm", content = "" })
-            chat:submit()
-          end,
-          index = 2,
-          description = "Send",
-        },
-        close = {
-          modes = {
-            n = "<leader>q",
-            i = "<C-c>",
-          },
-          index = 4,
-          callback = "keymaps.close",
-          description = "Close Chat",
-        },
-      },
-    })
-  end,
+    },
+  },
   keys = {
     {
       "<leader>cc",

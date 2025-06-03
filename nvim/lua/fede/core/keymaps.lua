@@ -5,10 +5,12 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without lost register" })
-keymap.set("n", "<C-d>", "<C-d>zz")
-keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down half page and center" })
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up half page and center" })
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
+keymap.set("n", "j", "jzz", { desc = "Move down and center" })
+keymap.set("n", "k", "kzz", { desc = "Move up and center" })
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 

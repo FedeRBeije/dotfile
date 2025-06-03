@@ -8714,3 +8714,355 @@ nvim
 clear
 cd nvim
 ls
+cp .env.example .env
+docker --version
+docker run -d --name fashion-retail-mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password mongo:latest
+docker ps
+brew install mongosh
+mongosh --version
+mongosh mongodb://localhost:27017/fashion-retail --eval "db.runCommand({ ping: 1 })"
+mongosh --eval "show dbs"
+mongosh --version
+mkdir -p db
+mkdir -p scripts
+npm install
+npm run seed
+docker ps
+DEBUG=mongoose:* npm run seed
+docker stop fashion-retail-mongodb && docker rm fashion-retail-mongodb
+chmod +x start-mongodb.sh && ./start-mongodb.sh
+chmod +x setup-db.sh && ./setup-db.sh
+docker ps
+docker stop fashion-retail-mongodb && docker rm fashion-retail-mongodb
+docker run -d --name fashion-retail-mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin123 -e MONGO_INITDB_DATABASE=admin -v mongodb_data:/data/db mongo:latest
+docker rm -f fashion-retail-mongodb
+docker run -d --name fashion-retail-mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin123 -e MONGO_INITDB_DATABASE=admin -v mongodb_data:/data/db mongo:latest
+docker ps
+mongosh "mongodb://admin:admin123@localhost:27017/fashion-retail?authSource=admin" --eval "db.runCommand({ ping: 1 })"
+npm run seed
+cd nvim
+nvim
+nvm
+nvim
+nvim
+cd nvim
+nvim
+clear
+nvim
+vim
+nvim
+npm run dev
+npm run build
+cd lib
+npm publish
+clear
+npm i
+nvim
+clear
+cd packages/cli
+cd clienteling
+npm run dev
+clear
+nvim
+clear
+nvim
+gitc
+git fetch
+git checkout feature/490-fix-planner
+npm run dev
+nvim
+clear
+nvim
+gitc
+git merge feature/490-fix-planner<\n>
+clear
+git push
+clera
+tmux attach -t work
+nvim
+clear
+clear
+npm run update
+nvim
+npm run update
+cd .config/nvim
+nvim
+clear
+clear
+gf
+nvim
+cd clienteling
+nvim
+nvim
+ncim
+vim
+nvim
+clear
+gf
+gitc
+git pull
+cd packages/ui
+nvim
+cd retail
+npm i
+cd packages/ui
+cd retail
+cd clienteling
+npx expo-doctor
+cd retail
+npx turbo run clean
+nvim
+npm run dev
+clear
+npm i
+npm run dev
+npm run def
+npm run dev
+nvim
+npx turbo run dev --filter=my-clienteling
+clear
+npm run dev
+expo start
+nvim
+nvim
+clear
+nvim
+nvim
+gitc
+git merge develop
+vim
+npm i
+gitc
+nvim
+npx expo start
+gh copilot explain "how i remove my last local commit"
+clear
+git reset --hard HEAD~1
+clear
+nvim
+gitc
+nvim
+clear
+gitc
+clear
+nvim
+clear
+gitc
+clear
+nvim
+vim
+gf
+git pull
+clear
+nvim
+clear
+nvim
+gf
+git pull
+nvim
+gitc
+git pull
+git merge feature/490-fix-planner<\n>
+clear
+gitc
+git merge develop
+git push
+clear
+gitc
+git reset --hard HEAD~1
+clear
+git merge feature/490-fix-planner<\n>
+git push
+clear
+npm run update
+npm run update
+clear
+npm run dev
+npm run update
+nvim
+gitc
+clear
+gf
+gitc
+git pull
+clear
+git checkout feature/donut-pie-percentage
+nvim
+nvim
+cd packages/ui
+nvim
+npm run dev
+nvim
+gf
+git pull
+clear
+gf
+nvim
+cd retail
+cd
+cd .ssh
+gf
+git pull
+clear
+gitc
+git pull
+git merge feature/donut-pie-percentage
+git push
+clear
+nvim
+git checkout -b feature/modal-android
+nvim
+clrea
+clear
+gitc
+gitd
+gitD
+gitd
+gitD
+gitd
+gitD
+gitc
+clear
+cd projects
+ls
+cd beije
+ls
+cd projects
+mkdir dojo
+cd dojo
+git clone git@github.com:BeijePeopleFirst/DOJO-scrum-app.git
+ls
+cd DOJO-scrum-app
+ls
+nvim
+git config user.email
+git config user.email "federico.reghini@peoplefirst.ws"
+git config user.email
+git config
+git config user.name "FedeRBeije"
+nvim
+cd DOJO-scrum-app
+git reset --hard HEAD~1
+git reset --soft HEAD~1
+git commit --amend --author="federico.reghini@peoplefirst.ws"
+git rebase -i HEAD~1
+git reset --hard
+nvim
+clear
+git reset --soft --orphan temp-branch
+git commit --amend --author="federico.reghini@peoplefirst.ws"
+git commit --amend --author="FedeRBeije federico.reghini@peoplefirst.ws"
+git commit --amend --author="FedericoReghini federico.reghini@peoplefirst.ws"
+git commit --amend --author="FedeRBeije <federico.reghini@peoplefirst.ws>"
+git push --force-with-lease origin main
+nvim
+npm run update
+clear
+clear
+npm run dev
+npm run update
+clear
+nvim
+clear
+git checkout -b feature/update-packages
+clear
+npx expo-doctor
+npx expo-doctor --verbose
+npm install expo@latest
+npx expo-doctor --verbose
+npx expo install --check
+npm run dev
+npx expo install expo@^53.0.0 --fix
+npm install @types/react@~19.0.10 @types/react-dom@~19.0.7
+cd /Users/federicoreghini/Documents/beije/engineering/retail-platform-mono
+npm install
+cd /Users/federicoreghini/Documents/beije/engineering/retail-platform-mono/apps/native/my-clienteling
+cp package.json package.json.backup
+npm install --legacy-peer-deps
+cd /Users/federicoreghini/Documents/beije/engineering/retail-platform-mono
+npm install
+cd /Users/federicoreghini/Documents/beije/engineering/retail-platform-mono/apps/native/my-clienteling
+npm install --legacy-peer-deps
+cd /Users/federicoreghini/Documents/beije/engineering/retail-platform-mono/apps/native/my-presenter
+npm install --legacy-peer-deps
+cd /Users/federicoreghini/Documents/beije/engineering/retail-platform-mono
+npm install
+npm view @tanstack/react-router version
+nvim
+cd retail
+nvim
+npm i
+clear
+claude
+clear
+npm run dev
+clear
+nvim
+clear
+cd clienteling
+npx expo-doctor --verbose
+cd retail
+npm i
+npx expo-doctor 
+nvim
+nvim
+clear
+npx turbo run clean
+rm -rf node_modules
+rm -rf package-lock.json
+npm i
+npx expo-doctor 
+npx expo-doctor 
+npx expo-doctor --verbose
+cd clienteling
+npx expo-doctor --verbose
+npx expo install --check
+npx expo-doctor --verbose
+npm why @expo/config-plugins
+claude
+npx expo-doctor --verbose
+npm why expo
+claude
+npx expo-doctor --verbose
+npm run build
+cd packages/cli
+npm run build
+nvim
+cd retail
+npm install @clack/prompt --workspace=cli
+npm install @clack/prompt --workspace=@clienteling/cli
+npm install @clack/prompts --workspace=@clienteling/cli
+cd clienteling
+cd packages/cli
+npm run build
+cd clienteling
+npm run build
+nvim
+npx lint-staged
+nvim
+cd retail
+npm install --save-dev prettier<\n>
+cd clienteling
+npx lint-staged
+nvim
+git stash pop
+nvim
+git stash pop
+nvim
+clear
+gitc
+clera
+clear
+nvim
+git stash clear<\n>
+clrea
+clear
+clear
+cd clienteling
+npm run dev
+nvim
+gf
+npm run update
+clear
+clear
+clear

@@ -26,7 +26,7 @@ return {
   "CopilotC-Nvim/CopilotChat.nvim",
   branch = "main",
   dependencies = {
-    { "github/copilot.vim" }, -- or github/copilot.vim
+    { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
     { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
     { "nvim-telescope/telescope.nvim" }, -- Use telescope for help actions
   },
@@ -34,9 +34,9 @@ return {
   opts = {
     debug = true, -- Enable debugging
     question_header = "## Fede ",
-    model = "claude-3.7-sonnet",
+    model = "claude-sonnet-4",
     sticky = {
-      "@models Using claude-3.7-sonnet",
+      "@models Using claude-sonnet-4",
       "#files",
     },
 

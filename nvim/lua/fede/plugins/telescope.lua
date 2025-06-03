@@ -33,6 +33,9 @@ return {
             ["<C-t>"] = trouble_telescope.open,
           },
         },
+        extensions = {
+          fzf = {},
+        },
       },
     })
 

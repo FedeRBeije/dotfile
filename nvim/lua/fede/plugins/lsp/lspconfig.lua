@@ -140,6 +140,20 @@ return {
       },
     })
 
+    vim.lsp.config("pyright", {
+      capabilities = capabilities,
+      settings = {
+        python = {
+          analysis = {
+            typeCheckingMode = "basic",
+            autoImportCompletions = true,
+            autoSearchPaths = true,
+            useLibraryCodeForTypes = true,
+          },
+        },
+      },
+    })
+
     -- For servers that don't need special configuration, set up directly using vim.lsp.config
     -- Get the list of installed servers from mason-lspconfig
     local installed_servers = mason_lspconfig.get_installed_servers()
