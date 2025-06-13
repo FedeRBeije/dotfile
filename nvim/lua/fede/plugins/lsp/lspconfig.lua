@@ -70,14 +70,6 @@ return {
     -- used to enable autocompletion (assign to every lsp server config)
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
-    -- NOTE: DEPRECATED
-    -- Change the Diagnostic symbols in the sign column (gutter)
-    -- local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-    -- for type, icon in pairs(signs) do
-    --   local hl = "DiagnosticSign" .. type
-    --   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-    -- end
-
     -- Configure language servers
     -- Using vim.lsp.config for Neovim 0.11+
     vim.lsp.config("rust_analyzer", {
@@ -124,17 +116,25 @@ return {
       capabilities = capabilities,
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
     })
-
     vim.lsp.config("lua_ls", {
       capabilities = capabilities,
       settings = {
         Lua = {
-          -- make the language server recognize "vim" global
+          runtime = {
+            version = "LuaJIT",
+          },
           diagnostics = {
             globals = { "vim" },
           },
           completion = {
             callSnippet = "Replace",
+          },
+          workspace = {
+            library = vim.api.nvim_get_runtime_file("", true),
+            checkThirdParty = false,
+          },
+          telemetry = {
+            enable = false,
           },
         },
       },

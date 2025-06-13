@@ -9066,3 +9066,418 @@ npm run update
 clear
 clear
 clear
+nvim
+rm ~/.local/state/nvim/shada/main.shada
+nvim
+nvim
+rm ~/.local/state/nvim/shada/main.shada
+nvim
+clear
+gf
+git checkout refactor/491-route
+nvim
+gitc
+nvim
+gitc
+npx lint-staged
+nvim
+git commit --amend
+nvim
+git push --force-with-lease 
+clear
+nvim
+nvim
+nvim
+gitc
+nvim
+cd retail
+npm i @shopify/flash-list@2.0.0-rc.2 --workspace=my-clienteling
+cd packages/ui
+nvim
+cd reatil
+cd retail
+npm i
+npm run dev
+clear
+gf
+git pull
+clear
+nvim
+clear
+gitc
+git pull origin develop
+clear
+git push
+clear
+nvim
+npm run dev
+clear
+nvim
+gf
+git pull
+nvim
+gf
+git pull
+git push
+clear
+nvim
+git log --since="1 week ago" --pretty=format:"%h - %s (%an, %ar)"
+git log --since="1 week ago" --pretty=format:"- %s (%h)" --no-merges
+nvim
+gf
+git pull
+nvim
+clear
+gf
+git pull
+clear
+nvim
+clear
+npm run dev
+clear
+nvim
+tmux attach -t work
+clear
+source ~/.config/nushell/config.nu
+clear
+clear
+gf
+git pull
+clear
+clear
+source ~/.config/nushell/config.nu
+clear
+gf
+clear
+npm run dev
+nvim
+brew install fd
+nvim
+clear
+npm run dev
+clear
+nvim
+clear
+nvim
+cd packages/ui
+nvim
+cd retail
+clear
+gf
+gp
+gf
+git pull
+nvim
+clear
+brew install lua-language-server
+nvim
+clear
+nvim
+cd engineering
+mkdir ofetch
+npx create-expo-app@latest ofetch-demo
+cd ofetch-demo
+npm install ofetch
+clear
+mkdir -p src/api
+mkdir src
+mkdir src/api
+npm run dev
+clear
+npx expo start
+nvim
+gf
+nvim
+git pull origin master
+nvim
+git add .
+nvim
+gf
+git pull
+clear
+npm run update
+nvim
+clear
+nvim
+gf
+git pull
+npm run update
+clear
+nvim
+gf
+git pull
+nvim
+gitc
+git merge refactor/491-route
+git push
+clear
+gitd
+clear
+gf
+git pull
+npm run update
+clear
+nvim
+clea
+clear
+git pull
+nvim
+npm run dev
+clea
+clear
+gitc
+git pull origin develop
+nvim
+npm run build
+cd packages/cli
+nvim
+cd retail
+npx turbo run dev --filter=my-clienteling
+clear
+cd clienteling
+npm run build
+clear
+nvim
+npm run dev
+cd retail
+rg "axios/dist/node/axios.cjs"
+npm i
+nvim
+cd clienteling
+expo start
+npm run start
+nvim
+nvim
+cd retail
+npm i
+npm run start
+cd clienteling
+npm run start
+clear
+npm run start
+cd retail
+npm i
+cd clienteling
+npm run start
+cd retail
+npx turbo run clean
+npm i
+cd clienteling
+nvim
+cd retail
+npx turbo run clean
+npm i
+cd clienteling
+nvim
+npm i
+cd retail
+npm i
+cd clienteling
+nvim
+cd re
+npm run start
+npm i
+nvim
+npm i
+clear
+npm i
+npm run start
+nvim
+npm i
+tmux attach -t work
+clear
+nvim
+gitc
+clear
+git pull
+clear
+npm run dev
+cd reatil
+cd retail
+npm i
+npm run dev
+cd clienteling
+nvim
+cd clienteling
+nvim
+clear
+gf
+clear
+gf
+git pull
+ollama codestral:22b
+ollama list
+ollama run codestral:22b
+clear
+source ~/.config/nushell/config.nu
+nvim
+npm run dev
+clear
+nvim
+git checkout -b feature/cli-mock
+nvim
+clear
+cd packages/cli
+nvim
+clear
+gitc
+mkdir -p packages/cli/src/__mocks__/api
+mkdir packages/cli/src/__mocks__/api
+clear
+nvm
+nvim
+\clear
+clear
+gf
+git branch list
+gh copilot explain "how to list remote branches with git"
+git branch -r
+gf
+git checkout feature/495-add-product-refactor
+nvim
+nvim
+nvi
+git commit --amend
+vim
+clear
+clear
+nvim
+nvim
+gitc
+npm run update
+nvim
+npm run update
+npm run dev
+cd retail
+npx turbo dev --filter=my-clienteling
+clear
+cd packages/cli
+nvi m
+nvim
+cd clienteling
+nvim
+clera
+clear
+gf
+nvim
+gitc
+git pull
+clear
+gitc
+gitd
+clear
+gitc
+nvim
+clear
+clear
+npm run dev
+clear
+nvim
+clear
+nvim
+nvim
+gitc
+gf
+git ull
+git pull
+clear
+clear
+gf
+git pull origin master
+vim
+clear
+gf
+git pull
+clear
+gitc
+nvim
+cd clienteling
+node scripts/utils.ts
+node src/scripts/utils.ts
+cd packages/cli
+nvim
+cd retail
+nvim
+cd packages/cli
+node src/mock/utils.ts
+node src/commands/mock/utils.ts
+node src/commands/mock/dev.ts
+clear
+node src/commands/prepare/start.ts
+cd clienteling
+tmux attach -t work
+tmux detach
+tmux
+tmux detach
+nvim
+cd myclienteling-app-mobile
+clear
+git push
+clear
+npm run build_wave
+clear
+git push
+clear
+npm run build_wave
+nvim
+npm run build_wave
+clear
+npm run build_wave
+nvim
+npm run ios-test-tf
+clear
+nvim
+npm run ios-test-tf
+nvim
+npm run ios-tf
+clear
+npx expo install expo@latest
+npx expo-doctor
+npx expo install --check
+npx expo install --check --force
+nvim
+vim
+npx expo install expo@~52.0.46
+npx expo install expo@~52.0.46 --force
+npm install expo~52.0.46 --force
+nvim
+npm i
+nvim
+npm i
+npx expo-doctor
+npx expo install --check
+cd myclienteling-app-mobile
+nvim
+npx expo-doctor
+nvim
+nvim
+clear
+npm run ios-tf
+nvim
+npm i
+npm run ios-tf
+clear
+nvim
+cd myclienteling-app-components
+nvim
+clear
+gf
+git pull
+nvim
+git pull
+nvim
+npm i
+nvim
+npm run build
+clear
+nvim
+npm publish
+nvim
+npm i
+clear
+npm run ios-tf
+clear
+npm run ios-test-tf
+npm run build_wave
+nvim
+nvim

@@ -22,6 +22,7 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decremen
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
+keymap.set("n", "<leader>sw", "<C-w>w", { desc = "Switch between split windows" }) -- switch between split windows
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
@@ -46,6 +47,12 @@ keymap.set("n", "<leader>os", ":ObsidianSearch<cr>", { desc = "Search obsidian n
 keymap.set("n", "<leader>oqs", ":ObsidianQuickSwitch<cr>", { desc = "Quick Switch" })
 keymap.set("n", "<leader>ob", ":ObsidianBacklinks<cr>", { desc = "show location list of backlinks" })
 keymap.set("n", "<leader>ot", ":ObsidianTemplate<cr>", { desc = "follow link under cusor" })
+
+-- Lua
+
+keymap.set("n", "<leader>ls", "<cmd>source %<CR>", { desc = "Source current Lua file" })
+keymap.set("n", "<leader>ll", ".lua<CR>", { desc = "Execute the current line" })
+
 -- Copilot
 local function toggle_copilot()
   if vim.g.copilot_enabled then
